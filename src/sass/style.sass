@@ -4,12 +4,60 @@
 *   
     box-sizing: border-box
     margin: 0px
-
-.text1
     +reg
-    display: block
-    margin-bottom: 15px
-.text2
-    +bold
+
+.container
+    max-width: 1680px
+    width: 96%
+    margin: auto
+
+.hover
+    &:hover
+        transition: 0.2s
+        color: $df-orange
+      
+        
+.hoverBG
+    &:hover
+        transition: 0.2s
+        background: $df-orange
+        border-radius: 10px
+
+.header
+    padding: 35px 0
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &-logo
+        a
+            display: flex
+            align-items: center
+            text-decoration: none
+        span
+            display: block
+            margin-left: 10px
+            font-size: 30px
+            color: $df-text
+            +bold
+    &-links
+        display: flex
+        align-items: center
+        a
+            text-decoration: none
+            margin-right: 40px
+            color: $df-text
+            font-size: 20px
+            position: relative
+            +bold
+            &:last-child
+                margin-right: 0
+            
+    &-socials
+        margin-left: 40px
+        a
+            margin: 0
+            margin-left: 10px
+            &:first-child
+                margin-left: 0
 
 
