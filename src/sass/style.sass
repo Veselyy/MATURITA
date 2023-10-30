@@ -3,14 +3,15 @@
 
 *   
     box-sizing: border-box
-    margin: 0px
     +reg
-
 .container
     max-width: 1680px
     width: 96%
     margin: auto
-
+body
+    margin: 0
+    padding: 0
+    height: 100%
 .hover
     &:hover
         transition: 0.2s
@@ -23,8 +24,11 @@
         background: $df-orange
         border-radius: 10px
 
-.header
+.navbar
     padding: 35px 0
+    position: fixed
+    width: 100%
+    background-color: #fff
     &-wrap
         display: flex
         justify-content: space-between
@@ -59,5 +63,30 @@
             margin-left: 10px
             &:first-child
                 margin-left: 0
+
+.header
+    background-image: linear-gradient(red, blue)
+    height: 100vh
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+    &-wrap
+        padding-top: 325px
+        &__title
+            font-size: 50px
+            +bold
+            margin-bottom: 35px
+        &__button
+            background-color: $df-blue
+            color: #fff
+            font-size: 20px
+            padding: 27px 23px
+            border: $df-blue
+            border-radius: 5px
+            &:hover
+                transition: 0.2s
+                background-color: $df-orange
+                cursor: pointer
 
 
