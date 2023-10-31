@@ -3,7 +3,7 @@
 
 *   
     box-sizing: border-box
-    +reg
+    font-family: 'Montserrat', sans-serif
 .container
     max-width: 1680px
     width: 96%
@@ -88,5 +88,70 @@ body
                 transition: 0.2s
                 background-color: $df-orange
                 cursor: pointer
+
+.explain
+    padding: 100px 0
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &-text
+        width: 60%
+        &__title
+            margin: 0
+            font-size: 35px
+            +reg
+        &__item
+            margin: 50px 0 0 0
+            max-width: 810px
+            line-height: 40px
+            span
+                font-size: 25px
+                +bold
+            p
+                margin: 0
+                font-size: 20px
+                +reg
+                strong
+                    font-weight: 500
+                    color: $df-red
+        &__arrows
+            display: flex
+            justify-content: space-between
+            align-content: center
+            max-width: 400px
+            margin-left: 170px
+    &-image
+        width: 40%
+        margin: auto
+        &__block
+            display: flex
+            justify-content: center
+        &__item
+            max-width: 400px
+            height: 400px
+            display: flex
+            align-items: center
+            img
+                max-width: 400px
+                height: auto
+.slick-initialized .slick-slide
+    display: flex
+.slick-dots
+    bottom: -50px
+    li
+        width: 25px
+        height: 25px
+        button
+            border: 5px solid $df-red
+            border-radius: 100px
+            width: 25px
+            height: 25px
+li.slick-active
+    background-color: $df-red
+    border-radius: 100px
+                
+
+
+
 
 

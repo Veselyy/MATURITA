@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
 }
 
 .container {
@@ -106,4 +105,89 @@ body {
   transition: 0.2s;
   background-color: #E96110;
   cursor: pointer;
+}
+
+.explain {
+  padding: 100px 0;
+}
+.explain-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.explain-text {
+  width: 60%;
+}
+.explain-text__title {
+  margin: 0;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.explain-text__item {
+  margin: 50px 0 0 0;
+  max-width: 810px;
+  line-height: 40px;
+}
+.explain-text__item span {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.explain-text__item p {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.explain-text__item p strong {
+  font-weight: 500;
+  color: #ff0000;
+}
+.explain-text__arrows {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 400px;
+  margin-left: 170px;
+}
+.explain-image {
+  width: 40%;
+  margin: auto;
+}
+.explain-image__block {
+  display: flex;
+  justify-content: center;
+}
+.explain-image__item {
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.explain-image__item img {
+  max-width: 400px;
+  height: auto;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+.slick-dots li {
+  width: 25px;
+  height: 25px;
+}
+.slick-dots li button {
+  border: 5px solid #ff0000;
+  border-radius: 100px;
+  width: 25px;
+  height: 25px;
+}
+
+li.slick-active {
+  background-color: #ff0000;
+  border-radius: 100px;
 }/*# sourceMappingURL=style.css.map */
