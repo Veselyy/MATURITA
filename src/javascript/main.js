@@ -1,5 +1,6 @@
 //neriskujeme že se projekt nenačte
 $(document).ready(function(){
+//první slider na webu s textem "O myšlenkové mapě"
 $('.explain-text__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -7,6 +8,7 @@ $('.explain-text__slider').slick({
     nextArrow: $('.explain-text__arrowRight')
 });
 
+//druhý slider na webu s obrázkama v sekci "O myšlenkové mapě"
 $('.explain-image__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
