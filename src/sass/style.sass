@@ -92,12 +92,14 @@ body
                 cursor: pointer
 
 .explain
-    padding: 100px 0
+    padding: 0 0 50px 0
     &-wrap
         display: flex
         justify-content: space-between
     &-text
         width: 60%
+        &__title
+            padding: 110px 0 0 0
         &__item
             margin: 50px 0 0 0
             max-width: 810px
@@ -132,6 +134,7 @@ body
             img
                 max-width: 400px
                 height: auto
+
 .slick-initialized .slick-slide
     display: flex
 .slick-dots
@@ -140,7 +143,7 @@ body
         width: 25px
         height: 25px
         button
-            border: 5px solid $df-red
+            border: 4px solid $df-red
             border-radius: 100px
             width: 25px
             height: 25px
@@ -148,9 +151,53 @@ body
 li.slick-active
     background-color: $df-red
     border-radius: 100px
-                
 
+.offer
+    padding: 50px 0
+    &-wrap
+        &__title
+            margin-bottom: 30px
+    &-slider
+        &__arrows
+            text-align: center
+    &-block
+        justify-content: space-between
+        flex-direction: column
+        &__title
+            font-size: 30px
+            margin: 0
+            text-align: center
+            margin-bottom: 40px
+    &-item
+        display: flex
+        justify-content: space-between
+    &-review
+        max-width: 560px
+        &__title
+            display: block
+            text-align: center
+            font-size: 25px
+            +bold
+            color: #fff
+            padding: 6px 0
+            background-color: #000
+        &__text
+            margin: 0
+            padding: 25px 0
+            +reg
+            font-size: 22px
+            line-height: 40px
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    &-video
+        background-color: #000
+        width: 400px
+        height: 400px
+        display: flex
+        align-items: center
+        img
+            max-width: 400px
+            height: auto
+.offer-video
+    width: 400px
 
-
-
-
+    

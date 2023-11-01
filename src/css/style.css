@@ -115,7 +115,7 @@ body {
 }
 
 .explain {
-  padding: 100px 0;
+  padding: 0 0 50px 0;
 }
 .explain-wrap {
   display: flex;
@@ -123,6 +123,9 @@ body {
 }
 .explain-text {
   width: 60%;
+}
+.explain-text__title {
+  padding: 110px 0 0 0;
 }
 .explain-text__item {
   margin: 50px 0 0 0;
@@ -182,7 +185,7 @@ body {
   height: 25px;
 }
 .slick-dots li button {
-  border: 5px solid #ff0000;
+  border: 4px solid #ff0000;
   border-radius: 100px;
   width: 25px;
   height: 25px;
@@ -191,4 +194,65 @@ body {
 li.slick-active {
   background-color: #ff0000;
   border-radius: 100px;
+}
+
+.offer {
+  padding: 50px 0;
+}
+.offer-wrap__title {
+  margin-bottom: 30px;
+}
+.offer-slider__arrows {
+  text-align: center;
+}
+.offer-block {
+  justify-content: space-between;
+  flex-direction: column;
+}
+.offer-block__title {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.offer-item {
+  display: flex;
+  justify-content: space-between;
+}
+.offer-review {
+  max-width: 560px;
+}
+.offer-review__title {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 6px 0;
+  background-color: #000;
+}
+.offer-review__text {
+  margin: 0;
+  padding: 25px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+.offer-video {
+  background-color: #000;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.offer-video img {
+  max-width: 400px;
+  height: auto;
+}
+
+.offer-video {
+  width: 400px;
 }/*# sourceMappingURL=style.css.map */
