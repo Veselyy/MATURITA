@@ -38,6 +38,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 1000;
 }
 .navbar-wrap {
   display: flex;
@@ -84,7 +85,7 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(#000, #3b3b3b);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,6 +100,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 35px;
+  color: #fff;
 }
 .header-wrap__button {
   background-color: #38B6FF;

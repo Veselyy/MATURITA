@@ -31,6 +31,7 @@ body
     position: fixed
     width: 100%
     background-color: #fff
+    z-index: 1000
     &-wrap
         display: flex
         justify-content: space-between
@@ -67,7 +68,7 @@ body
                 margin-left: 0
 
 .header
-    background-image: linear-gradient(red, blue)
+    background-image: linear-gradient(#000, #3b3b3b)
     height: 100vh
     background-position: center
     background-repeat: no-repeat
@@ -79,6 +80,7 @@ body
             font-size: 50px
             +bold
             margin-bottom: 35px
+            color: #fff
         &__button
             background-color: $df-blue
             color: #fff
