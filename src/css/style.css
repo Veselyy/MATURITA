@@ -222,7 +222,7 @@ li.slick-active {
   justify-content: space-between;
 }
 .offer-review {
-  max-width: 560px;
+  max-width: 650px;
 }
 .offer-review__title {
   display: block;
@@ -236,7 +236,7 @@ li.slick-active {
 }
 .offer-review__text {
   margin: 0;
-  padding: 25px 0;
+  padding: 25px 15px 25px 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;
@@ -257,4 +257,77 @@ li.slick-active {
 
 .offer-video {
   width: 400px;
+}
+
+.footer {
+  padding: 50px 0;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contact {
+  width: 50%;
+}
+.footer-contact span {
+  font-size: 20px;
+}
+.footer-contact__title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.footer-contact__title strong {
+  color: #E96110;
+  font-weight: normal;
+}
+.footer-contact__email {
+  font-size: 20px;
+  color: #E96110;
+}
+.footer-contact__socials {
+  margin-top: 40px;
+}
+.footer-contact__socials a {
+  margin-right: 20px;
+}
+.footer-contact__socials a:last-child {
+  margin-right: 0;
+}
+.footer-form {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.form input {
+  font-size: 20px;
+}
+.form__secure {
+  font-size: 20px;
+}
+.form__secure a {
+  color: #000;
+}
+.form__button {
+  margin-top: 20px;
+}
+.form__button button {
+  font-size: 20px;
+  padding: 15px 22px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #38B6FF;
+  transition: 0.2s;
+}
+.form__button button:hover {
+  transition: 0.2s;
+  background-color: #E96110;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
