@@ -2,9 +2,10 @@
 $(document).ready(function(){
 
 //scrolování na nadpis "Už vás nebaví psát si zápisky jako prostý text zkuste myšlenkové mapy"
-$(".header-wrap__button").click(function(){
+$("#Headbutton").click(function(){
     $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
 });
+
 //první slider na webu s textem "O myšlenkové mapě"
 $('.explain-text__slider').slick({
     slidesToShow: 1,
@@ -26,7 +27,7 @@ $('.offer-slider').slick({
     prevArrow: $('.offer-slider__arrowLeft'),
     nextArrow: $('.offer-slider__arrowRight')
 });
-
+//zobrazení navbaru a footeru na hlavní stránce
 $('#navbar').load("navbar.html");
 $('#footer').load("footer.html");
 
