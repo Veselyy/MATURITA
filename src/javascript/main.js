@@ -27,4 +27,7 @@ $('.offer-slider').slick({
     nextArrow: $('.offer-slider__arrowRight')
 });
 
+$('#navbar').load("navbar.html");
+$('#footer').load("footer.html");
+
 });
