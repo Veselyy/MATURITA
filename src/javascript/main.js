@@ -5,11 +5,11 @@ $(document).ready(function(){
 $("#Headbutton").click(function(){
     $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
 });
-
+//Scrolování na sekci Kontakt
 $("#Afooter").click(function(){
     $("html, body").animate({scrollTop: $("#footer").offset().top},1000);
 });
-
+//Scrolování na sekci O myšlenkových mapách
 $("#Aexplain").click(function(){
     $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
 });
