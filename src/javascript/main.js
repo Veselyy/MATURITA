@@ -6,6 +6,15 @@ $("#Headbutton").click(function(){
     $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
 });
 
+$("#Afooter").click(function(){
+    $("html, body").animate({scrollTop: $("#footer").offset().top},1000);
+});
+
+$("#Aexplain").click(function(){
+    $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
+});
+
+
 //první slider na webu s textem "O myšlenkové mapě"
 $('.explain-text__slider').slick({
     slidesToShow: 1,
