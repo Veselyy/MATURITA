@@ -84,6 +84,9 @@ body {
 .navbar-socials a:first-child {
   margin-left: 0;
 }
+.navbar-socials a img {
+  border-radius: 10px;
+}
 
 .header {
   background-image: linear-gradient(#000, #3b3b3b);
@@ -208,6 +211,14 @@ li.slick-active {
 .offer-slider__arrows {
   text-align: center;
 }
+.offer-slider__arrowLeft img {
+  width: 100px;
+  height: auto;
+}
+.offer-slider__arrowRight img {
+  width: 100px;
+  height: auto;
+}
 .offer-block {
   justify-content: space-between;
   flex-direction: column;
@@ -293,6 +304,9 @@ li.slick-active {
 }
 .footer-contact__socials a:last-child {
   margin-right: 0;
+}
+.footer-contact__socials a img {
+  border-radius: 10px;
 }
 .footer-form {
   width: 50%;
