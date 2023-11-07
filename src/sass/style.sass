@@ -132,13 +132,34 @@ body
             display: flex
             justify-content: center
         &__item
+            position: relative
             max-width: 400px
             height: 400px
             display: flex
-            align-items: center
+            align-items: center   
+            justify-content: center
+            transition: 0.2s
             img
                 max-width: 400px
                 height: auto
+            &:hover
+                button
+                    opacity: 1
+                    transition: 0.2s
+            button
+                opacity: 0
+                position: absolute
+                background-color: $df-blue
+                color: #fff
+                font-size: 20px
+                padding: 23px 27px
+                border: $df-blue
+                border-radius: 5px
+                z-index: 100
+                &:hover
+                    transition: 0.2s
+                    background-color: $df-orange
+                    cursor: pointer
 
 .slick-initialized .slick-slide
     display: flex
