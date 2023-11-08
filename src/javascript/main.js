@@ -40,4 +40,44 @@ $('.offer-slider').slick({
 $('#navbar').load("navbar.html");
 $('#footer').load("footer.html");
 
+// Modální okna
+    $('#explainWiden_1').click(function(){
+        $('#explainModal_1').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#explainClose_1').click(function(){
+        $('#explainModal_1').removeClass('modal-active')
+    });
+
+    $('#explainWiden_2').click(function(){
+        $('#explainModal_2').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#explainClose_2').click(function(){
+        $('#explainModal_2').removeClass('modal-active')
+    });
+
+    $('#explainWiden_3').click(function(){
+        $('#explainModal_3').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#explainClose_3').click(function(){
+        $('#explainModal_3').removeClass('modal-active')
+    });
+
+    $('#explainWiden_4').click(function(){
+        $('#explainModal_4').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#explainClose_4').click(function(){
+        $('#explainModal_4').removeClass('modal-active')
+    });
+
+    $('#explainWiden_5').click(function(){
+        $('#explainModal_5').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#explainClose_5').click(function(){
+        $('#explainModal_5').removeClass('modal-active')
+    });
 });

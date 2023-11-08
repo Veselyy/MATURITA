@@ -170,23 +170,19 @@ body {
 }
 .explain-image__item {
   position: relative;
-  max-width: 400px;
-  height: 400px;
+  max-width: 450px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   transition: 0.2s;
 }
 .explain-image__item img {
   max-width: 400px;
   height: auto;
 }
-.explain-image__item:hover button {
-  opacity: 1;
-  transition: 0.2s;
-}
 .explain-image__item button {
-  opacity: 0;
   position: absolute;
   background-color: #38B6FF;
   color: #fff;
@@ -200,6 +196,55 @@ body {
   transition: 0.2s;
   background-color: #E96110;
   cursor: pointer;
+}
+.explain-image__item a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal-dialog {
+  margin: auto;
+  margin-top: 130px;
+  max-width: 1250px;
+  max-height: 800px;
+  background-color: #fff;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-dialog img {
+  height: 700px;
+}
+.modal-active {
+  display: flex;
+}
+.modal-active body {
+  overflow: hidden;
 }
 
 .slick-initialized .slick-slide {
