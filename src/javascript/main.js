@@ -47,6 +47,7 @@ $('#footer').load("footer.html");
         });
     $('#explainClose_1').click(function(){
         $('#explainModal_1').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
     });
 //------------------------------------------------------
     $('#explainWiden_2').click(function(){
@@ -55,6 +56,7 @@ $('#footer').load("footer.html");
         });
     $('#explainClose_2').click(function(){
         $('#explainModal_2').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
     });
 //------------------------------------------------------
     $('#explainWiden_3').click(function(){
@@ -63,6 +65,7 @@ $('#footer').load("footer.html");
         });
     $('#explainClose_3').click(function(){
         $('#explainModal_3').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
     });
 //------------------------------------------------------
     $('#explainWiden_4').click(function(){
@@ -71,6 +74,7 @@ $('#footer').load("footer.html");
         });
     $('#explainClose_4').click(function(){
         $('#explainModal_4').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
     });
 //------------------------------------------------------
     $('#explainWiden_5').click(function(){
@@ -79,5 +83,6 @@ $('#footer').load("footer.html");
         });
     $('#explainClose_5').click(function(){
         $('#explainModal_5').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
     });
 });

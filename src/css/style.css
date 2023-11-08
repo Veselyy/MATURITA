@@ -121,7 +121,7 @@ body {
 }
 
 .explain {
-  padding: 0 0 50px 0;
+  padding-bottom: 50px;
 }
 .explain-wrap {
   display: flex;
@@ -131,7 +131,7 @@ body {
   width: 60%;
 }
 .explain-text__title {
-  padding: 110px 0 0 0;
+  padding-top: 110px;
 }
 .explain-text__item {
   margin: 50px 0 0 0;
@@ -303,6 +303,7 @@ li.slick-active {
 }
 .offer-review {
   max-width: 650px;
+  box-shadow: inset -2px -5px 30px 0px rgba(0, 0, 0, 0.1);
 }
 .offer-review__title {
   display: block;
@@ -321,7 +322,6 @@ li.slick-active {
   font-weight: 400;
   font-size: 22px;
   line-height: 40px;
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 .offer-video {
   background-color: #000;
@@ -413,4 +413,29 @@ li.slick-active {
   transition: 0.2s;
   background-color: #E96110;
   cursor: pointer;
+}
+
+.myself {
+  padding-bottom: 50px;
+  padding-top: 110px;
+}
+.myself-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.myself-text__title {
+  background-color: #38B6FF;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+.myself-text__desc {
+  max-width: 700px;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.myself-text__desc strong {
+  font-weight: 500;
+  color: #ff0000;
 }/*# sourceMappingURL=style.css.map */
