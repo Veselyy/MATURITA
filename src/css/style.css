@@ -121,7 +121,7 @@ body {
 }
 
 .explain {
-  padding-bottom: 50px;
+  padding: 110px 0 50px 0;
 }
 .explain-wrap {
   display: flex;
@@ -129,9 +129,6 @@ body {
 }
 .explain-text {
   width: 60%;
-}
-.explain-text__title {
-  padding-top: 110px;
 }
 .explain-text__item {
   margin: 50px 0 0 0;
@@ -150,7 +147,7 @@ body {
   font-weight: 400;
 }
 .explain-text__item p strong {
-  font-weight: 500;
+  font-weight: 600;
   color: #ff0000;
 }
 .explain-text__arrows {
@@ -436,6 +433,6 @@ li.slick-active {
   font-weight: 400;
 }
 .myself-text__desc strong {
-  font-weight: 500;
+  font-weight: 600;
   color: #ff0000;
 }/*# sourceMappingURL=style.css.map */

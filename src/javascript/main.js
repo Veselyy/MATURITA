@@ -2,18 +2,17 @@
 $(document).ready(function(){
 
 //scrolování na nadpis "Už vás nebaví psát si zápisky jako prostý text zkuste myšlenkové mapy"
-$("#Headbutton").click(function(){
-    $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
+$("#explainButton").click(function(){
+    $("html, body").animate({scrollTop: $("#explain").offset().top},1000);
 });
 //Scrolování na sekci Kontakt
 $("#Afooter").click(function(){
     $("html, body").animate({scrollTop: $("#footer").offset().top},1000);
 });
-//Scrolování na sekci O myšlenkových mapách
-$("#Aexplain").click(function(){
-    $("html, body").animate({scrollTop: $("#Explain").offset().top},1000);
+//Scrolování na sekci O mně
+$("#myselfButton").click(function(){
+    $("html, body").animate({scrollTop: $("#myself").offset().top},1000);
 });
-
 
 //první slider na webu s textem "O myšlenkové mapě"
 $('.explain-text__slider').slick({
