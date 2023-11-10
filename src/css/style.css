@@ -405,6 +405,7 @@ li.slick-active {
   border: 0;
   background-color: #38B6FF;
   transition: 0.2s;
+  color: #fff;
 }
 .form__button button:hover {
   transition: 0.2s;
@@ -450,10 +451,36 @@ li.slick-active {
 .myProjects-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.myProjects-item img {
-  width: 400px;
-  height: 400px;
-  background-color: #000;
-  margin-bottom: 15px;
+.myProjects-item__image {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: inset -2px -5px 30px 0px rgba(0, 0, 0, 0.1);
+}
+.myProjects-item__image img {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+.myProjects-item button {
+  font-size: 20px;
+  padding: 15px 22px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #38B6FF;
+  transition: 0.2s;
+  color: #fff;
+  width: 50%;
+}
+.myProjects-item button:hover {
+  transition: 0.2s;
+  background-color: #E96110;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
