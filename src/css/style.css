@@ -435,4 +435,25 @@ li.slick-active {
 .myself-text__desc strong {
   font-weight: 600;
   color: #ff0000;
+}
+
+.myProjects {
+  padding: 50px 0;
+}
+.myProjects-wrap__title {
+  margin-bottom: 30px;
+}
+.myProjects-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.myProjects-item {
+  display: flex;
+  flex-direction: column;
+}
+.myProjects-item img {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
