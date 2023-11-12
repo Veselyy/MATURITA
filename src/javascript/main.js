@@ -84,4 +84,44 @@ $('#footer').load("footer.html");
         $('#explainModal_5').removeClass('modal-active')
         $('body').css("overflow", "scroll")
     });
+
+
+
+    // Modální okna O mně
+    $('#myProjectsWiden_1').click(function(){
+        $('#myProjectsModal_1').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#myProjectsClose_1').click(function(){
+        $('#myProjectsModal_1').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
+    });
+//------------------------------------------------------
+    $('#myProjectsWiden_2').click(function(){
+        $('#myProjectsModal_2').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#myProjectsClose_2').click(function(){
+        $('#myProjectsModal_2').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
+    });
+//------------------------------------------------------
+    $('#myProjectsWiden_3').click(function(){
+        $('#myProjectsModal_3').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#myProjectsClose_3').click(function(){
+        $('#myProjectsModal_3').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
+    });
+//------------------------------------------------------
+    $('#myProjectsWiden_4').click(function(){
+        $('#myProjectsModal_4').addClass('modal-active');
+        $('body').css("overflow", "hidden")
+        });
+    $('#myProjectsClose_4').click(function(){
+        $('#myProjectsModal_4').removeClass('modal-active')
+        $('body').css("overflow", "scroll")
+    });
+
 });

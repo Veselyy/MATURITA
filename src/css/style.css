@@ -210,14 +210,11 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 1000;
 }
 .modal-dialog {
   margin: auto;
-  margin-top: 130px;
-  max-width: 1250px;
-  max-height: 800px;
   background-color: #fff;
-  padding: 40px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -235,7 +232,7 @@ body {
   align-items: center;
 }
 .modal-dialog img {
-  height: 700px;
+  height: 90vh;
 }
 .modal-active {
   display: flex;
@@ -430,6 +427,7 @@ li.slick-active {
   max-width: 700px;
   font-size: 20px;
   line-height: 40px;
+  margin-left: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }

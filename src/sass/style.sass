@@ -169,13 +169,10 @@ body
     height: 100%
     background: rgba(0, 0, 0, 0.5)
     display: none
+    z-index: 1000
     &-dialog
         margin: auto
-        margin-top: 130px
-        max-width: 1250px
-        max-height: 800px
         background-color: #fff
-        padding: 40px
         position: relative
         display: flex
         justify-content: center
@@ -191,7 +188,7 @@ body
             justify-content: center
             align-items: center
         img
-            height: 700px
+            height: 90vh
     &-active
         display: flex
         body
@@ -347,6 +344,7 @@ li.slick-active
             max-width: 700px
             font-size: 20px
             line-height: 40px
+            margin-left: 15px
             +reg
             strong
                 font-weight: 600
