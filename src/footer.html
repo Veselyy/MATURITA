@@ -25,23 +25,31 @@
 
                 <div class="footer-form">
                     <form action="#" class="form">
+
                         <label for="name">Jméno:</label> 
-                        <input type="text" name="name" id="name"> <br>
+                        <input type="text" name="name" id="name" placeholder="Jméno"> <br>
+
                         <label for="email">Email:</label> 
-                        <input type="text" name="email" id="email"> <br>
+                        <input type="text" name="email" id="email" placeholder="Email"> <br>
+
                         <label for="message">Zpráva:</label> 
-                        <input type="text" name="message" id="message"> <br>
+                        <textarea type="text" name="message" id="message"  placeholder="Zpráva"></textarea> <br>
+
                         <span class="form__secure">
                             Tento formulář je chráněn pomocí reCAPTCHA Google <a target="_blank" href="https://policies.google.com/privacy">Zásady ochrany osobních údajů</a>
                              | <a target="_blank" href="https://policies.google.com/terms">Podmínky služby</a>
                         </span>
-                        <a class="form__button" href="#">
-                            <button>ODESLAT</button>
-                        </a>
+                            <button id="form-btn">ODESLAT</button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!--link na validace formulare v javascriptu-->
+    <script src="./javascript/jquery.validate.min.js"></script>
+<!--připojení "main.js"-->
+    <script src="./javascript/main.js"></script>
 </body>
 </html>

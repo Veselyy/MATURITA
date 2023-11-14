@@ -33,6 +33,23 @@ body {
   border-radius: 10px;
 }
 
+#form-btn {
+  font-size: 20px;
+  padding: 15px 22px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #38B6FF;
+  transition: 0.2s;
+  color: #fff;
+  margin-top: 20px;
+  width: 20%;
+}
+#form-btn:hover {
+  transition: 0.2s;
+  background-color: #E96110;
+  cursor: pointer;
+}
+
 .navbar {
   padding: 35px 0;
   position: fixed;
@@ -386,28 +403,11 @@ li.slick-active {
 .form input {
   font-size: 20px;
 }
+.form textarea {
+  font-size: 20px;
+}
 .form__secure {
   font-size: 20px;
-}
-.form__secure a {
-  color: #000;
-}
-.form__button {
-  margin-top: 20px;
-}
-.form__button button {
-  font-size: 20px;
-  padding: 15px 22px;
-  border-radius: 5px;
-  border: 0;
-  background-color: #38B6FF;
-  transition: 0.2s;
-  color: #fff;
-}
-.form__button button:hover {
-  transition: 0.2s;
-  background-color: #E96110;
-  cursor: pointer;
 }
 
 .myself {

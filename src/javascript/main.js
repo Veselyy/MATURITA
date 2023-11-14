@@ -124,4 +124,19 @@ $('#footer').load("footer.html");
         $('body').css("overflow", "scroll")
     });
 
+
+    $('.form').validate({
+        rules: {
+          // Musí být vyplnění
+          name: "required",
+          phone: "email"
+          },
+        
+        // Zprávy, které se zobrazí při erroru
+        // Zprávy se přepíšou podle nás
+          messages:{
+            username: "Prosím vyplňte pole!",
+          },
+          phone: "Prosím vyplňte pole!"
+      });
 });
