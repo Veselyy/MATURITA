@@ -125,13 +125,7 @@ $('#footer').load("footer.html");
     });
 
 
-    $('.form').validate({
-        rules: {
-          // Musí být vyplnění
-          name: "required",
-          phone: "email"
-          },
-        
+    $('#form').validate({      
         // Zprávy, které se zobrazí při erroru
         // Zprávy se přepíšou podle nás
           messages:{
