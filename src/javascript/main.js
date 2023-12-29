@@ -123,14 +123,4 @@ $('#footer').load("footer.html");
         $('#myProjectsModal_4').removeClass('modal-active')
         $('body').css("overflow", "scroll")
     });
-
-
-    $('#form').validate({      
-        // Zprávy, které se zobrazí při erroru
-        // Zprávy se přepíšou podle nás
-          messages:{
-            username: "Prosím vyplňte pole!",
-          },
-          phone: "Prosím vyplňte pole!"
-      });
 });

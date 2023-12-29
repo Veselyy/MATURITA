@@ -24,7 +24,10 @@
                 </div>
 
                 <div class="footer-form">
-                    <form action="#" class="form" id="form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form">
+                        <input type="hidden" name="access_key" value="cf332940-3817-4578-a7fe-f9d995719c23">
+                        <!--Jméno předmětu v emailu-->
+                        <input type="hidden" name="from_name" value="Dotaz z MP">
 
                         <label for="name">Jméno:</label> 
                         <input type="text" name="name" id="name" placeholder="Jméno" required> <br>
@@ -39,7 +42,7 @@
                             Tento formulář je chráněn pomocí reCAPTCHA Google <a target="_blank" href="https://policies.google.com/privacy">Zásady ochrany osobních údajů</a>
                              | <a target="_blank" href="https://policies.google.com/terms">Podmínky služby</a>
                         </span>
-                            <button id="form-btn">ODESLAT</button>
+                            <button type="submit" id="form-btn">ODESLAT</button>
                     </form>
                 </div>
             </div>
@@ -52,6 +55,8 @@
     <script src="./javascript/slick.min.js"></script>
 <!--link na validace formulare v javascriptu-->
     <script src="./javascript/jquery.validate.min.js"></script>
+<!--připojeni databáze pro formulář-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 <!--připojení "main.js"-->
     <script src="./javascript/main.js"></script>
 </body>
