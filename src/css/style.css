@@ -397,14 +397,18 @@ li.slick-active {
 }
 .form label {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 .form input {
+  padding: 7px;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .form textarea {
   font-size: 20px;
+  height: 160px;
+  margin-bottom: 20px;
 }
 .form__secure {
   font-size: 20px;
@@ -434,6 +438,9 @@ li.slick-active {
 .myself-text__desc strong {
   font-weight: 600;
   color: #ff0000;
+}
+.myself-image img {
+  border-radius: 1000px;
 }
 
 .myProjects {
