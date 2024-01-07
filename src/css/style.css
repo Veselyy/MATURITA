@@ -422,6 +422,9 @@ li.slick-active {
   display: flex;
   justify-content: space-between;
 }
+.myself-text {
+  max-width: 50%;
+}
 .myself-text__title {
   background-color: #38B6FF;
   padding: 5px 15px;
@@ -438,6 +441,10 @@ li.slick-active {
 .myself-text__desc strong {
   font-weight: 600;
   color: #ff0000;
+}
+.myself-image {
+  width: 50%;
+  text-align: center;
 }
 .myself-image img {
   border-radius: 1000px;
