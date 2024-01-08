@@ -1,8 +1,6 @@
 //neriskujeme že se projekt nenačte
 $(document).ready(function(){
 
-//pohyb po webu
-//$('#fullpage').fullpage();
 
 //scrolování na nadpis "Už vás nebaví psát si zápisky jako prostý text zkuste myšlenkové mapy"
 $("#explainButton").click(function(){

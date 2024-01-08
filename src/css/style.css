@@ -249,7 +249,7 @@ body {
   align-items: center;
 }
 .modal-dialog img {
-  height: 90vh;
+  height: 70vh;
 }
 .modal-active {
   display: flex;
