@@ -135,7 +135,7 @@ body {
   font-weight: 700;
 }
 .header-wrap__button:hover {
-  transition: 0.3s;
+  transition: 0.2s;
   scale: 1.02;
   background-color: #000;
   cursor: pointer;

@@ -1,20 +1,22 @@
 //neriskujeme že se projekt nenačte
 $(document).ready(function(){
 
-
 //scrolování na nadpis "Už vás nebaví psát si zápisky jako prostý text zkuste myšlenkové mapy"
 $("#explainButton").click(function(){
     $("html, body").animate({scrollTop: $("#explain").offset().top},1000);
 });
 
+
 $("#Aexplain").click(function(){
-
-    var redirectURL = 'index.html';
-
-    window.location.href = redirectURL;
-
-    $("html, body").animate({scrollTop: $("#explain").offset().top},1000); // Plynulý scroll
-   
+    if(window.location.href == 'http://127.0.0.1:5500/src/index.html#')  {
+        $("html, body").animate({scrollTop: $("#explain").offset().top},1000); // Plynulý scroll
+    }
+    else {
+        window.location.href = 'http://127.0.0.1:5500/src/index.html#';
+        console.log("hh");
+    }
+    
+  
 });
 //Scrolování na sekci Kontakt
 $("#Afooter").click(function(){
