@@ -25,6 +25,7 @@ body {
 .hover:hover {
   transition: 0.2s;
   color: #E96110;
+  box-shadow: 0.01px 3px;
 }
 
 .hoverBG:hover {
@@ -120,21 +121,26 @@ body {
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 60px;
   color: #fff;
 }
 .header-wrap__button {
-  background-color: #38B6FF;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-size: 20px;
   padding: 27px 23px;
   border: #38B6FF;
   border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .header-wrap__button:hover {
-  transition: 0.2s;
-  background-color: #E96110;
+  transition: 0.3s;
+  scale: 1.02;
+  background-color: #000;
   cursor: pointer;
+  color: #fff;
+  box-shadow: 3px 3px 30px 6px #fff;
 }
 
 .explain {
@@ -315,6 +321,7 @@ li.slick-active {
 .offer-review {
   max-width: 650px;
   box-shadow: inset -2px -5px 30px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 5px;
 }
 .offer-review__title {
   display: block;
@@ -325,10 +332,11 @@ li.slick-active {
   color: #fff;
   padding: 6px 0;
   background-color: #000;
+  border-radius: 5px 0;
 }
 .offer-review__text {
   margin: 0;
-  padding: 25px 15px 25px 0;
+  padding-right: 15px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 22px;

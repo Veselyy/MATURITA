@@ -6,6 +6,16 @@ $(document).ready(function(){
 $("#explainButton").click(function(){
     $("html, body").animate({scrollTop: $("#explain").offset().top},1000);
 });
+
+$("#Aexplain").click(function(){
+
+    var redirectURL = 'index.html';
+
+    window.location.href = redirectURL;
+
+    $("html, body").animate({scrollTop: $("#explain").offset().top},1000); // Plynulý scroll
+   
+});
 //Scrolování na sekci Kontakt
 $("#Afooter").click(function(){
     $("html, body").animate({scrollTop: $("#footer").offset().top},1000);
