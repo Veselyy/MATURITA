@@ -12,6 +12,21 @@ body
     margin: 0
     padding: 0
     height: 100%
+
+@keyframes buttonHover 
+    from 
+        background-color: #fff
+        color: #000
+    
+    to 
+        scale: 1.02
+        background-color: #000
+        cursor: pointer
+        color: #fff
+        box-shadow: 3px 3px 30px 3px #fff
+    
+
+                
 .section-title
     margin: 0
     font-size: 35px
@@ -106,14 +121,10 @@ body
             border: $df-blue
             border-radius: 5px
             +bold
+            animation: buttonHover 0.2s ease
             &:hover
-                transition: 0.2s
-                scale: 1.02
-                background-color: #000
-                cursor: pointer
-                color: #fff
-                box-shadow: 3px 3px 30px 3px #fff
-
+                animation: buttonHover 0.2s ease
+            
 .explain
     padding: 110px 0 50px 0
     &-wrap

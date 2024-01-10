@@ -15,6 +15,19 @@ body {
   height: 100%;
 }
 
+@keyframes buttonHover {
+  from {
+    background-color: #fff;
+    color: #000;
+  }
+  to {
+    scale: 1.02;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 3px 3px 30px 3px #fff;
+  }
+}
 .section-title {
   margin: 0;
   font-size: 35px;
@@ -133,14 +146,10 @@ body {
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  animation: buttonHover 0.2s ease;
 }
 .header-wrap__button:hover {
-  transition: 0.2s;
-  scale: 1.02;
-  background-color: #000;
-  cursor: pointer;
-  color: #fff;
-  box-shadow: 3px 3px 30px 3px #fff;
+  animation: buttonHover 0.2s ease;
 }
 
 .explain {
