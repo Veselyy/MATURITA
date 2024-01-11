@@ -1,6 +1,10 @@
 //neriskujeme že se projekt nenačte
 $(document).ready(function(){
 
+//zobrazení navbaru a footeru na hlavní stránce
+$('#navbar').load("navbar.html");
+$('#footer').load("footer.html");
+
 //scrolování na nadpis "Už vás nebaví psát si zápisky jako prostý text zkuste myšlenkové mapy"
 $("#explainButton").click(function(){
     $("html, body").animate({scrollTop: $("#explain").offset().top},1000);
@@ -48,9 +52,6 @@ $('.offer-slider').slick({
     prevArrow: $('.offer-slider__arrowLeft'),
     nextArrow: $('.offer-slider__arrowRight')
 });
-//zobrazení navbaru a footeru na hlavní stránce
-$('#navbar').load("navbar.html");
-$('#footer').load("footer.html");
 
 // Modální okna
     $('#explainWiden_1').click(function(){

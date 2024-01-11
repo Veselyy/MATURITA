@@ -4,57 +4,51 @@
 *   
     box-sizing: border-box
     font-family: 'Montserrat', sans-serif
+
+
 .container
     max-width: 1680px
     width: 96%
     margin: auto
+
 body
     margin: 0
     padding: 0
     height: 100%
-
-@keyframes buttonHover 
-    from 
-        background-color: #fff
-        color: #000
-    
-    to 
-        scale: 1.02
-        background-color: #000
-        cursor: pointer
-        color: #fff
-        box-shadow: 3px 3px 30px 3px #fff
-    
-
-                
+             
 .section-title
     margin: 0
     font-size: 35px
     +reg
-.hover
+
+.NavbarHover
     &:hover
-        transition: 0.2s
         color: $df-orange
         box-shadow: 0.01px 3px
-.hoverBG
+        transition: 0.2s
+    &:not(:hover)
+        transition: 0.2s
+
+.SocialHover
     &:hover
         transition: 0.2s
         background: $df-orange
         border-radius: 10px
-#form-btn
-    font-size: 20px
-    padding: 15px 22px
-    border-radius: 5px
-    border: 0
-    background-color: $df-blue
-    transition: 0.2s
-    color: #fff
-    margin-top: 20px
-    width: 20%
+    &:not(:hover)
+        transition: 0.2s
+
+.ViewHover
     &:hover
         transition: 0.2s            
         background-color: $df-orange
         cursor: pointer
+        scale: 1.02
+        opacity: 10
+    &:not(:hover)
+        transition: 0.2s
+
+
+
 .navbar
     padding: 35px 0
     position: fixed
@@ -66,6 +60,7 @@ body
         justify-content: space-between
     &-logo
         a
+            text-decoration: none
             display: flex
             align-items: center
             text-decoration: none
@@ -121,9 +116,15 @@ body
             border: $df-blue
             border-radius: 5px
             +bold
-            animation: buttonHover 0.2s ease
             &:hover
-                animation: buttonHover 0.2s ease
+                scale: 1.02
+                background-color: #000
+                cursor: pointer
+                color: #fff
+                box-shadow: 3px 3px 30px 3px #fff
+                transition: 0.3s
+            &:not(:hover)
+                transition: 0.3s
             
 .explain
     padding: 110px 0 50px 0
@@ -181,15 +182,20 @@ body
                 border-radius: 5px
                 z-index: 100
                 &:hover
-                    transition: 0.2s
                     background-color: $df-orange
                     cursor: pointer
+                    transition: 0.2s
+                &:not(:hover)
+                    transition: 0.2s
+
+                    
             a
                 font-size: 18px
                 text-decoration: none
                 color: $df-text
                 text-decoration: underline
                 margin-top: 15px
+
 .modal
     position: fixed
     top: 0
@@ -321,6 +327,7 @@ li.slick-active
         &__socials
             margin-top: 40px
             a
+                text-decoration: none
                 margin-right: 20px
                 &:last-child
                     margin-right: 0
@@ -346,6 +353,15 @@ li.slick-active
     &__secure
         font-size: 20px
 
+#form-btn
+    font-size: 20px
+    padding: 15px 22px
+    border-radius: 5px
+    border: 0
+    background-color: $df-blue
+    color: #fff
+    margin-top: 20px
+    width: 20%
 
 // Stránka O mně
 
@@ -400,7 +416,6 @@ li.slick-active
             border: 1px solid $df-text
             border-radius: 20px
             box-shadow: inset -2px -5px 30px 0px rgba(0, 0, 0, 0.1)
-
             img
                 width: 80%
                 height: auto
@@ -411,12 +426,5 @@ li.slick-active
             border-radius: 5px
             border: 0
             background-color: $df-blue
-            transition: 0.2s
             color: #fff
             width: 50%
-            &:hover
-                transition: 0.2s            
-                background-color: $df-orange
-                cursor: pointer
-
-    

@@ -15,19 +15,6 @@ body {
   height: 100%;
 }
 
-@keyframes buttonHover {
-  from {
-    background-color: #fff;
-    color: #000;
-  }
-  to {
-    scale: 1.02;
-    background-color: #000;
-    cursor: pointer;
-    color: #fff;
-    box-shadow: 3px 3px 30px 3px #fff;
-  }
-}
 .section-title {
   margin: 0;
   font-size: 35px;
@@ -35,33 +22,33 @@ body {
   font-weight: 400;
 }
 
-.hover:hover {
-  transition: 0.2s;
+.NavbarHover:hover {
   color: #E96110;
   box-shadow: 0.01px 3px;
+  transition: 0.2s;
+}
+.NavbarHover:not(:hover) {
+  transition: 0.2s;
 }
 
-.hoverBG:hover {
+.SocialHover:hover {
   transition: 0.2s;
   background: #E96110;
   border-radius: 10px;
 }
-
-#form-btn {
-  font-size: 20px;
-  padding: 15px 22px;
-  border-radius: 5px;
-  border: 0;
-  background-color: #38B6FF;
+.SocialHover:not(:hover) {
   transition: 0.2s;
-  color: #fff;
-  margin-top: 20px;
-  width: 20%;
 }
-#form-btn:hover {
+
+.ViewHover:hover {
   transition: 0.2s;
   background-color: #E96110;
   cursor: pointer;
+  scale: 1.02;
+  opacity: 10;
+}
+.ViewHover:not(:hover) {
+  transition: 0.2s;
 }
 
 .navbar {
@@ -76,6 +63,7 @@ body {
   justify-content: space-between;
 }
 .navbar-logo a {
+  text-decoration: none;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -146,10 +134,17 @@ body {
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  animation: buttonHover 0.2s ease;
 }
 .header-wrap__button:hover {
-  animation: buttonHover 0.2s ease;
+  scale: 1.02;
+  background-color: #000;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 3px 3px 30px 3px #fff;
+  transition: 0.3s;
+}
+.header-wrap__button:not(:hover) {
+  transition: 0.3s;
 }
 
 .explain {
@@ -222,9 +217,12 @@ body {
   z-index: 100;
 }
 .explain-image__item button:hover {
-  transition: 0.2s;
   background-color: #E96110;
   cursor: pointer;
+  transition: 0.2s;
+}
+.explain-image__item button:not(:hover) {
+  transition: 0.2s;
 }
 .explain-image__item a {
   font-size: 18px;
@@ -396,6 +394,7 @@ li.slick-active {
   margin-top: 40px;
 }
 .footer-contact__socials a {
+  text-decoration: none;
   margin-right: 20px;
 }
 .footer-contact__socials a:last-child {
@@ -429,6 +428,17 @@ li.slick-active {
 }
 .form__secure {
   font-size: 20px;
+}
+
+#form-btn {
+  font-size: 20px;
+  padding: 15px 22px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #38B6FF;
+  color: #fff;
+  margin-top: 20px;
+  width: 20%;
 }
 
 .myself {
@@ -504,12 +514,6 @@ li.slick-active {
   border-radius: 5px;
   border: 0;
   background-color: #38B6FF;
-  transition: 0.2s;
   color: #fff;
   width: 50%;
-}
-.myProjects-item button:hover {
-  transition: 0.2s;
-  background-color: #E96110;
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
