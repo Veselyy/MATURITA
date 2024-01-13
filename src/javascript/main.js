@@ -5,12 +5,11 @@ $(document).ready(function(){
 $('#navbar').load("navbar.html");
 $('#footer').load("footer.html");
 
-//scrolování na nadpis "Už vás nebaví psát si zápisky jako prostý text zkuste myšlenkové mapy"
+//scrolování na sekci explain
 $("#explainButton").click(function(){
     $("html, body").animate({scrollTop: $("#explain").offset().top},1000);
 });
-
-
+/*
 $("#Aexplain").click(function(){
     if(window.location.href == 'http://127.0.0.1:5500/src/index.html#')  {
         $("html, body").animate({scrollTop: $("#explain").offset().top},1000); // Plynulý scroll
@@ -19,13 +18,13 @@ $("#Aexplain").click(function(){
         window.location.href = 'http://127.0.0.1:5500/src/index.html#';
         console.log("hh");
     }
-    
-  
 });
+*/
 //Scrolování na sekci Kontakt
 $("#Afooter").click(function(){
     $("html, body").animate({scrollTop: $("#footer").offset().top},1000);
 });
+
 //Scrolování na sekci O mně
 $("#myselfButton").click(function(){
     $("html, body").animate({scrollTop: $("#myself").offset().top},1000);
@@ -38,6 +37,7 @@ $('.explain-text__slider').slick({
     prevArrow: $('.explain-text__arrowLeft'),
     nextArrow: $('.explain-text__arrowRight')
 });
+
 //druhý slider na webu s obrázkama v sekci "O myšlenkové mapě"
 $('.explain-image__slider').slick({
     slidesToShow: 1,
@@ -45,6 +45,7 @@ $('.explain-image__slider').slick({
     dots: true,
     arrows: false
 });
+
 //třetí slider na webu s textem a obrázkem v sekci "Nabídka"
 $('.offer-slider').slick({
     slidesToShow: 1,
@@ -52,6 +53,7 @@ $('.offer-slider').slick({
     prevArrow: $('.offer-slider__arrowLeft'),
     nextArrow: $('.offer-slider__arrowRight')
 });
+
 
 // Modální okna
     $('#explainWiden_1').click(function(){
@@ -100,8 +102,7 @@ $('.offer-slider').slick({
     });
 
 
-
-    // Modální okna O mně
+// Modální okna O mně
     $('#myProjectsWiden_1').click(function(){
         $('#myProjectsModal_1').addClass('modal-active');
         $('body').css("overflow", "hidden")

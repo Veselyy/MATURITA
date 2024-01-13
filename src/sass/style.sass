@@ -26,7 +26,7 @@ body
         color: $df-orange
         box-shadow: 0.01px 3px
         transition: 0.2s
-    &:not(:hover)
+    &:not(hover)
         transition: 0.2s
 
 .SocialHover
@@ -48,7 +48,7 @@ body
         transition: 0.2s
 
 
-
+//navigace stránky
 .navbar
     padding: 35px 0
     position: fixed
@@ -93,7 +93,7 @@ body
                 margin-left: 0
             img
                 border-radius: 10px
-
+//sekce při vstupu na stránku
 .header
     background-image: linear-gradient(#000, #3b3b3b)
     height: 100vh
@@ -125,7 +125,7 @@ body
                 transition: 0.3s
             &:not(:hover)
                 transition: 0.3s
-            
+          
 .explain
     padding: 110px 0 50px 0
     &-wrap
@@ -196,6 +196,7 @@ body
                 text-decoration: underline
                 margin-top: 15px
 
+//modální okna s obrázky
 .modal
     position: fixed
     top: 0
@@ -231,6 +232,8 @@ body
 
 .slick-initialized .slick-slide
     display: flex
+
+//stylizace teček ke slideru
 .slick-dots
     bottom: -50px
     li
@@ -242,6 +245,7 @@ body
             width: 25px
             height: 25px
 
+//když je slider aktivní
 li.slick-active
     background-color: $df-red
     border-radius: 100px
@@ -364,8 +368,6 @@ li.slick-active
     width: 20%
 
 // Stránka O mně
-
-
 .myself
     padding-bottom: 50px
     padding-top: 110px
@@ -393,7 +395,7 @@ li.slick-active
         img
             border-radius: 1000px
 
-
+//sekce moje projekty
 .myProjects
     padding: 50px 0
     &-wrap
