@@ -429,8 +429,7 @@ li.slick-active {
 .form__secure {
   font-size: 20px;
 }
-
-#form-btn {
+.form button {
   font-size: 20px;
   padding: 15px 22px;
   border-radius: 5px;

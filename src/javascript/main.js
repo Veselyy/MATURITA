@@ -1,143 +1,159 @@
+//problémy s jinými knihovnami, které taky používají $
+const $jq = jQuery.noConflict();
+
 //neriskujeme že se projekt nenačte
-$(document).ready(function(){
+$jq(document).ready(function(){
+ //zobrazení navbaru a footeru na hlavní stránce
+    $jq('#navbar').load("navbar.html")
+    $jq('#footer').load("footer.html")
+   
+//scrolování na sekci explain
+    $jq("#explainButton").click(function(){
+        $jq("html, body").animate({scrollTop: $jq("#explain").offset().top},1000)
+    })
 
-    //zobrazení navbaru a footeru na hlavní stránce
-    $('#navbar').load("navbar.html");
-    $('#footer').load("footer.html");
-    
-    //scrolování na sekci explain
-    $("#explainButton").click(function(){
-        $("html, body").animate({scrollTop: $("#explain").offset().top},1000);
-    });
+//Scrolování na sekci O mně
+     $jq("#myselfButton").click(function(){
+        $jq("html, body").animate({scrollTop: $jq("#myself").offset().top},1000)
+    })
 
     
-    $("#Aexplain").click(function(){
-        if(window.location.href == 'http://127.0.0.1:5500/src/index.html#')  {
-            $("html, body").animate({scrollTop: $("#explain").offset().top},1000); // Plynulý scroll
+    $jq("#Aexplain").click(function(){
+        if(window.location.href == 'http://127.0.0.1:5500/src/index.html')  {
+            $jq("html, body").animate({scrollTop: $jq("#explain").offset().top},1000) // Plynulý scroll
         }
         else {
-            window.location.href = 'http://127.0.0.1:5500/src/index.html#';
-            console.log("hh");
+            window.location.href = 'http://127.0.0.1:5500/src/index.html'
+            console.log("hh")
         }
-    });
+    })
     
    
-    //Scrolování na sekci Kontakt
-    $("#Afooter").click(function(){
-        $("html, body").animate({scrollTop: $("#footer").offset().top},1000);
-    });
+//Scrolování na sekci Kontakt
+    $jq("#Afooter").click(function(){
+        $jq("html, body").animate({scrollTop: $jq("#footer").offset().top},1000)
+    })
+    $jq("#Afooter").click(function(){
+        $jq("html, body").animate({scrollTop: $jq(".footer").offset().top},1000)
+    })
     
-    //Scrolování na sekci O mně
-    $("#myselfButton").click(function(){
-        $("html, body").animate({scrollTop: $("#myself").offset().top},1000);
-    });
-    
-    //první slider na webu s textem "O myšlenkové mapě"
-    $('.explain-text__slider').slick({
+
+//první slider na webu s textem "O myšlenkové mapě"
+    $jq('.explain-text__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('.explain-text__arrowLeft'),
-        nextArrow: $('.explain-text__arrowRight')
-    });
+        prevArrow: $jq('.explain-text__arrowLeft'),
+        nextArrow: $jq('.explain-text__arrowRight')
+    })
     
-    //druhý slider na webu s obrázkama v sekci "O myšlenkové mapě"
-    $('.explain-image__slider').slick({
+//druhý slider na webu s obrázkama v sekci "O myšlenkové mapě"
+    $jq('.explain-image__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
         arrows: false
-    });
+    })
     
-    //třetí slider na webu s textem a obrázkem v sekci "Nabídka"
-    $('.offer-slider').slick({
+//třetí slider na webu s textem a obrázkem v sekci "Nabídka"
+    $jq('.offer-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('.offer-slider__arrowLeft'),
-        nextArrow: $('.offer-slider__arrowRight')
-    });
+        prevArrow: $jq('.offer-slider__arrowLeft'),
+        nextArrow: $jq('.offer-slider__arrowRight')
+    })
     
-    
-    // Modální okna
-        $('#explainWiden_1').click(function(){
-            $('#explainModal_1').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#explainClose_1').click(function(){
-            $('#explainModal_1').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+
+// Modální okna
+    $jq('#explainWiden_1').click(function(){
+            $jq('#explainModal_1').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#explainClose_1').click(function(){
+            $jq('#explainModal_1').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#explainWiden_2').click(function(){
-            $('#explainModal_2').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#explainClose_2').click(function(){
-            $('#explainModal_2').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#explainWiden_2').click(function(){
+            $jq('#explainModal_2').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#explainClose_2').click(function(){
+            $jq('#explainModal_2').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#explainWiden_3').click(function(){
-            $('#explainModal_3').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#explainClose_3').click(function(){
-            $('#explainModal_3').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#explainWiden_3').click(function(){
+            $jq('#explainModal_3').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#explainClose_3').click(function(){
+            $jq('#explainModal_3').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#explainWiden_4').click(function(){
-            $('#explainModal_4').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#explainClose_4').click(function(){
-            $('#explainModal_4').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#explainWiden_4').click(function(){
+            $jq('#explainModal_4').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#explainClose_4').click(function(){
+            $jq('#explainModal_4').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#explainWiden_5').click(function(){
-            $('#explainModal_5').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#explainClose_5').click(function(){
-            $('#explainModal_5').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#explainWiden_5').click(function(){
+            $jq('#explainModal_5').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#explainClose_5').click(function(){
+            $jq('#explainModal_5').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     
     
     // Modální okna O mně
-        $('#myProjectsWiden_1').click(function(){
-            $('#myProjectsModal_1').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#myProjectsClose_1').click(function(){
-            $('#myProjectsModal_1').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#myProjectsWiden_1').click(function(){
+            $jq('#myProjectsModal_1').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#myProjectsClose_1').click(function(){
+            $jq('#myProjectsModal_1').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#myProjectsWiden_2').click(function(){
-            $('#myProjectsModal_2').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#myProjectsClose_2').click(function(){
-            $('#myProjectsModal_2').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#myProjectsWiden_2').click(function(){
+            $jq('#myProjectsModal_2').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#myProjectsClose_2').click(function(){
+            $jq('#myProjectsModal_2').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#myProjectsWiden_3').click(function(){
-            $('#myProjectsModal_3').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#myProjectsClose_3').click(function(){
-            $('#myProjectsModal_3').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#myProjectsWiden_3').click(function(){
+            $jq('#myProjectsModal_3').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#myProjectsClose_3').click(function(){
+            $jq('#myProjectsModal_3').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
     //------------------------------------------------------
-        $('#myProjectsWiden_4').click(function(){
-            $('#myProjectsModal_4').addClass('modal-active');
-            $('body').css("overflow", "hidden")
-            });
-        $('#myProjectsClose_4').click(function(){
-            $('#myProjectsModal_4').removeClass('modal-active')
-            $('body').css("overflow", "scroll")
-        });
+        $jq('#myProjectsWiden_4').click(function(){
+            $jq('#myProjectsModal_4').addClass('modal-active');
+            $jq('body').css("overflow", "hidden")
+            })
+
+        $jq('#myProjectsClose_4').click(function(){
+            $jq('#myProjectsModal_4').removeClass('modal-active')
+            $jq('body').css("overflow", "scroll")
+        })
+        
     });
