@@ -5,7 +5,6 @@
     box-sizing: border-box
     font-family: 'Montserrat', sans-serif
 
-
 .container
     max-width: 1680px
     width: 96%
@@ -55,6 +54,7 @@ body
     width: 100%
     background-color: #fff
     z-index: 1000
+    border-bottom: solid 2px #0000000a
     &-wrap
         display: flex
         justify-content: space-between
@@ -159,10 +159,8 @@ body
         &__block
             display: flex
             justify-content: center
-                
         &__item
             position: relative
-            max-width: 450px
             height: 450px
             display: flex
             align-items: center   
@@ -188,7 +186,6 @@ body
                 &:not(:hover)
                     transition: 0.2s
 
-                    
             a
                 font-size: 18px
                 text-decoration: none
@@ -239,9 +236,9 @@ body
     li
         width: 25px
         height: 25px
+        border: 4px solid $df-red
+        border-radius: 100px
         button
-            border: 4px solid $df-red
-            border-radius: 100px
             width: 25px
             height: 25px
 
@@ -339,6 +336,7 @@ li.slick-active
                     border-radius: 10px
     &-form
         width: 50%
+
 .form
     display: flex
     flex-direction: column
