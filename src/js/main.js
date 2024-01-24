@@ -1,6 +1,10 @@
 //neriskujeme že se projekt nenačte
 $(document).ready(function () {
+ // Zobrazení navbaru a footeru na hlavní stránce
+  $('#navbar').load("navbar.html");
+  $('#footer').load("footer.html");
 
+  
     function smoothScroll(target) {
       $("html, body").animate({ scrollTop: $(target).offset().top }, 1200);
     }
@@ -62,8 +66,6 @@ $(document).ready(function () {
       });
     }
   
-    // Zobrazení navbaru a footeru na hlavní stránce
-    $('#navbar').load("navbar.html");
-    $('#footer').load("footer.html");
+   
   
   });
