@@ -161,21 +161,22 @@ body
         display: flex
         flex-wrap: wrap
         &__item
-            margin-right: 15px
-            margin-bottom: 10px
-            box-shadow: 2px 2px 10px 1px #000000
+            margin-right: 20px
+            margin-bottom: 20px
+            box-shadow: 2px 2px 5px
             cursor: pointer
-            width: 150px
-            height: 150px
-            
+            width: 288px
+            height: 162px
+            &:hover
+                scale: 1.1
+                transition: 0.3s
+                box-shadow: 5px 5px
+            &:not(:hover)
+                transition: 0.5s
             img
-                width: 150px
-                height: 150px
-                &:hover
-                    scale: 2.2
-                    transition: 1s
-                &:not(:hover)
-                    transition: 0.5s
+                width: 288px
+                height: 162px
+                
                     
             
 //modální okna s obrázky
@@ -205,12 +206,12 @@ body
             display: flex
             justify-content: center
             align-items: center
-        img
-            height: 70vh
     &-active
         display: flex
         body
             overflow-y: hidden
+        img
+            width: 55vw
 
 .offer
     padding: 50px 0
@@ -285,11 +286,8 @@ body
             margin-bottom: 40px
             strong
                 color: $df-orange
-                font-weight: normal
-            
         &__email
             font-size: 20px
-            color: $df-orange
         &__socials
             margin-top: 40px
             a
