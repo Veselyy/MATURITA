@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myšlenkové mapy</title>
+    <!--link na fonty, které používám přes google-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!--připojení css stylu-->
     <link rel="stylesheet" href="./css/style.css">
     <!--napojení grafiky sliderů-->
-    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
-<!--link na fonty, které používám přes google-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
 </head>
 
 <!--tělo, kde je vše vidět-->
@@ -38,7 +38,7 @@
                 <div class="explain-text">
                     <h2 class="explain-text__title section-title">Už vás nebaví psát si zápisky jako prostý text <br> zkuste <strong>myšlenkové mapy</strong></h2>
                     <!--Začátek slideru-->
-                    <div class="explain-text__slider">
+                    <div id="explainTextSlider" class="explain-text__slider">
                         <!--Proč používat myšlenkovou mapu?-->
                         <div class="slider-text__block">
                             <div class="explain-text__item">
@@ -148,51 +148,26 @@
                     </div>
                     
                 </div>
+
                 <div class="explain-image">
-                    <!--Začátek slideru-->
-                    <div class="explain-image__slider">
+                    <div class="explain-cards">
 
-                        <div class="explain-image__block">
-                            <div class="explain-image__item">
-                                <img src="./img/image of mind-maps_1.jpg" alt="Obrázek 1">
-                                <button id="explainWiden_1">ZOBRAZIT</button>
-                                <a target="_blank" href="https://www.freepik.com/">Designed by rawpixel.com / Freepik</a>
-                            </div>
-                            
+                        <div class="explain-cards__item">
+                            <img id="explainWiden_1" src="./img/image of mind-maps_1.jpg" alt="Obrázek 1">
+                        </div>
+                        <div class="explain-cards__item">
+                            <img id="explainWiden_2" src="./img/image of mind-maps_2.jpg" alt="Obrázek 2">
+                        </div>
+                        <div class="explain-cards__item">
+                            <img id="explainWiden_3" src="./img/image of mind-maps_3.jpg" alt="Obrázek 3">
+                        </div>
+                        <div class="explain-cards__item">
+                            <img id="explainWiden_4" src="./img/image of mind-maps_4.jpg" alt="Obrázek 4">
+                        </div>
+                        <div class="explain-cards__item">
+                            <img id="explainWiden_5" src="./img/image of mind-maps_5.jpg" alt="Obrázek 5">
                         </div>
 
-                        <div class="explain-image__block">
-                            <div class="explain-image__item">
-                                <img src="./img/image of mind-maps_2.jpg" alt="Obrázek 2">
-                                <button id="explainWiden_2">ZOBRAZIT</button>
-                                <a target="_blank" href="https://www.freepik.com/">Designed by rawpixel.com / Freepik</a>
-                            </div>
-                        </div>
-
-                        <div class="explain-image__block">
-                            <div class="explain-image__item">
-                                <img src="./img/image of mind-maps_3.jpg" alt="Obrázek 3">
-                                <button id="explainWiden_3">ZOBRAZIT</button>
-                                <a target="_blank" href="https://www.freepik.com/">Designed by rawpixel.com / Freepik</a>
-                            </div>
-                        </div>
-
-                        <div class="explain-image__block">
-                            <div class="explain-image__item">
-                                <img src="./img/image of mind-maps_4.jpg" alt="Obrázek 4">
-                                <button id="explainWiden_4">ZOBRAZIT</button>
-                                <a target="_blank" href="https://www.freepik.com/">Designed by rawpixel.com / Freepik</a>
-                            </div>
-                        </div>
-
-                        <div class="explain-image__block">
-                            <div class="explain-image__item">
-                                <img src="./img/image of mind-maps_5.jpg" alt="Obrázek 5">
-                                <button id="explainWiden_5">ZOBRAZIT</button>
-                                <a target="_blank" href="https://www.freepik.com/">Designed by rawpixel.com / Freepik</a>
-                            </div>
-                        </div>
-                        <!--Konec slideru-->
                     </div>
                 </div>
             </div>
@@ -237,7 +212,7 @@
             <div class="offer-wrap">
                 <h2 class="offer-wrap__title section-title">Zde jsem vybral 5 <strong>zdarma</strong> přístupných stránek <br> k tvorbě <strong>myšlenkových map</strong></h2>
                 <!--Začátek slideru-->
-                <div class="offer-slider">
+                <div id="offerSlider" class="offer-slider">
 
                     <div class="offer-block">
                         <h3 class="offer-block__title">Miro</h3> 
@@ -380,9 +355,9 @@
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
 <!--link na slidery v javascriptu-->
-    <script src="./javascript/slick.min.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
 
 <!--připojení hlavního souboru v javascriptu-->
-    <script src="./javascript/main.js"></script>
+<script  src="./js/main.js"></script>
 </body>
 </html>
