@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
 }
 
 .container {
@@ -18,8 +26,6 @@ body {
 .section-title {
   margin: 0;
   font-size: 35px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
 }
 
 .NavbarHover:hover {
@@ -74,8 +80,7 @@ body {
   margin-left: 10px;
   font-size: 30px;
   color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat-Bold", sans-serif;
 }
 .navbar-links {
   display: flex;
@@ -88,8 +93,7 @@ body {
   color: #000;
   font-size: 20px;
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat-Bold", sans-serif;
 }
 .navbar-links a:last-child {
   margin-right: 0;
@@ -121,8 +125,7 @@ body {
 }
 .header-wrap__title {
   font-size: 50px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat-Bold", sans-serif;
   margin-bottom: 60px;
   color: #fff;
 }
@@ -133,8 +136,7 @@ body {
   padding: 27px 23px;
   border: #38B6FF;
   border-radius: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat-Bold", sans-serif;
 }
 .header-wrap__button:hover {
   scale: 1.02;
@@ -165,17 +167,15 @@ body {
 }
 .explain-text__item span {
   font-size: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat-Bold", sans-serif;
 }
 .explain-text__item p {
   margin: 0;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat-Regular", sans-serif;
 }
 .explain-text__item p strong {
-  font-weight: 600;
+  font-family: "Montserrat-Bold", sans-serif;
   color: #ff0000;
 }
 .explain-text__arrows {
@@ -294,8 +294,7 @@ body {
   display: block;
   text-align: center;
   font-size: 25px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: "Montserrat-Bold", sans-serif;
   color: #fff;
   padding: 6px 0;
   background-color: #000;
@@ -304,8 +303,7 @@ body {
 .offer-review__text {
   margin: 0;
   padding-right: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat-Regular", sans-serif;
   font-size: 22px;
   line-height: 40px;
 }
@@ -419,8 +417,7 @@ body {
   font-size: 20px;
   line-height: 40px;
   margin-left: 15px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat-Regular", sans-serif;
 }
 .myself-text__desc strong {
   font-weight: 600;
