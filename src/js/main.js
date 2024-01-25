@@ -30,11 +30,11 @@ $(document).ready(function () {
     });
 
     // Slidery
-  $('#explainTextSlider').slick({
+  $('#explainSlider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: '.explain-text__arrowLeft',
-      nextArrow: '.explain-text__arrowRight'
+      prevArrow: '.explain-slider__arrowLeft',
+      nextArrow: '.explain-slider__arrowRight'
   });
 
   $('#offerSlider').slick({
@@ -45,7 +45,7 @@ $(document).ready(function () {
   });
   
     // Modální okna
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
       $(`#explainWiden_${i}`).click(function () {
         openModal(`#explainModal_${i}`);
       });

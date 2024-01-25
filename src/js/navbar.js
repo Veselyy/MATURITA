@@ -1,4 +1,5 @@
-function smoothScroll(target) {
+$(document).ready(function () {
+  function smoothScroll(target) {
     $("html, body").animate({ scrollTop: $(target).offset().top }, 1200);
   }
 // Ostatní scrollování
@@ -14,3 +15,4 @@ $("#Aexplain").click(function () {
   $("#Afooter").click(function () {
     smoothScroll("#footer");
   }); 
+});
