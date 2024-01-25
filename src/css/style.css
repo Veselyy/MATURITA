@@ -176,7 +176,7 @@ body {
 }
 .explain-text__item p strong {
   font-family: "Montserrat-Bold", sans-serif;
-  color: #ff0000;
+  color: #000;
 }
 .explain-text__arrows {
   display: flex;
