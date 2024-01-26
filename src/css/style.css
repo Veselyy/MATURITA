@@ -176,7 +176,6 @@ body {
 }
 .explain-text__item p strong {
   font-family: "Montserrat-Bold", sans-serif;
-  color: #000;
 }
 .explain-slider__arrows {
   display: flex;
@@ -323,15 +322,11 @@ body {
   line-height: 40px;
 }
 .offer-video {
-  background-color: #000;
-  width: 400px;
-  height: 400px;
   display: flex;
   align-items: center;
 }
 .offer-video img {
   max-width: 400px;
-  height: auto;
 }
 
 .offer-video {
@@ -339,7 +334,7 @@ body {
 }
 
 .footer {
-  padding: 50px 0 100px 0;
+  padding: 150px 0 250px 0;
 }
 .footer-wrap {
   display: flex;
@@ -435,8 +430,7 @@ body {
   font-family: "Montserrat-Regular", sans-serif;
 }
 .myself-text__desc strong {
-  font-weight: 600;
-  color: #ff0000;
+  font-family: "Montserrat-Bold", sans-serif;
 }
 .myself-image {
   width: 50%;
