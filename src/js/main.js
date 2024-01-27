@@ -40,8 +40,8 @@ $(document).ready(function () {
   $('#offerSlider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: '.offer-slider__arrowLeft',
-      nextArrow: '.offer-slider__arrowRight'
+      arrows: false,
+      dots: true
   });
   
     // Modální okna
