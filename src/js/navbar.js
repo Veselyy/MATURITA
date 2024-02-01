@@ -4,15 +4,15 @@ $(document).ready(function () {
   }
 // Ostatní scrollování
 $("#Aexplain").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/src/index.html#' ? smoothScroll("#explain") : window.location.href = 'http://127.0.0.1:5500/src/index.html#';
+    window.location.href == 'http://127.0.0.1:5500/src/index.html#' ? smoothScroll(".explainID") : window.location.href = 'http://127.0.0.1:5500/src/index.html#';
   });
 
   $("#Amyself").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/src/myself.html#' ? smoothScroll("#myself") : window.location.href = 'http://127.0.0.1:5500/src/myself.html#';
+    window.location.href == 'http://127.0.0.1:5500/src/myself.html#' ? smoothScroll(".myselfID") : window.location.href = 'http://127.0.0.1:5500/src/myself.html#';
   });
 
   // Scrolování na sekci Kontakt
   $("#Afooter").click(function () {
-    smoothScroll("#footer");
+    smoothScroll(".footerID");
   }); 
 });
