@@ -2,7 +2,7 @@
 $(document).ready(function () {
  // Zobrazení navbaru a footeru na hlavní stránce
   $('#navbar').load("navbar.html");
-  $('.footerID').load("footer.html");
+  $('#footer').load("footer.html");
 
   
     function smoothScroll(target) {
@@ -11,20 +11,22 @@ $(document).ready(function () {
   
     function openModal(modalId) {
       $(modalId).addClass('modal-active');
+      $('body').css("overflow", "hidden");
     }
   
     function closeModal(modalId) {
       $(modalId).removeClass('modal-active');
+      $('body').css("overflow", "scroll");
     }
   
     // Scrolování na sekci explain
     $("#explainButton").click(function () {
-      smoothScroll(".explainID");
+      smoothScroll("#explain");
     });
   
     // Scrolování na sekci O mně
     $("#myselfButton").click(function () {
-      smoothScroll(".myselfID");
+      smoothScroll("#myself");
     });
 
     // Slidery
@@ -63,31 +65,7 @@ $(document).ready(function () {
         closeModal(`#myProjectsModal_${i}`);
       });
     }
-
-
-    let currentSection = 1;
-
-    document.addEventListener('wheel', (event) => {
-      if (event.deltaY > 0) {
-        // Scroll dolů
-        if (currentSection < document.querySelectorAll('.section').length) {
-          currentSection++;
-          scrollToSection(currentSection);
-        }
-      } else {
-        // Scroll nahoru
-        if (currentSection > 0) {
-          currentSection--;
-          scrollToSection(currentSection);
-        }
-      }
-    });
-    
-    function scrollToSection(sectionNumber) {
-      const section = document.getElementById(`section${sectionNumber}`);
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-    
+  
+   
+  
   });
