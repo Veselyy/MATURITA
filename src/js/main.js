@@ -16,7 +16,7 @@ $(document).ready(function () {
   
     function closeModal(modalId) {
       $(modalId).removeClass('modal-active');
-      $('body').css("overflow", "scroll");
+      $('body').css("overflow-y", "scroll");
     }
   
     // Scrolování na sekci explain
