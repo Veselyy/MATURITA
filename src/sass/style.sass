@@ -9,6 +9,9 @@
     max-width: 1680px
     width: 96%
     margin: auto
+    @media (max-width: 800px)
+        width: 92%
+    
 
 body
     margin: 0
@@ -18,6 +21,14 @@ body
 .section-title
     margin: 0
     font-size: 35px
+    @media (max-width: 1600px)
+        font-size: 30px
+    @media (max-width: 1400px)
+        font-size: 25px
+    @media (max-width: 800px)
+        font-size: 20px
+    @media (max-width: 600px)
+        font-size: 18px
 
 .NavbarHover
     &:hover
@@ -44,7 +55,6 @@ body
         opacity: 10
     &:not(:hover)
         transition: 0.2s
-
 
 //navigace stránky
 .navbar
@@ -82,6 +92,8 @@ body
             +bold
             &:last-child
                 margin-right: 0
+        
+            
             
     &-socials
         margin-left: 80px
@@ -107,6 +119,16 @@ body
             +bold
             margin-bottom: 60px
             color: #fff
+            @media (max-width: 1400px)
+                font-size: 40px
+            @media (max-width: 800px)
+                font-size: 30px
+            @media (max-width: 600px)
+                font-size: 25px
+                margin-bottom: 40px
+            @media (max-width: 400px)
+                font-size: 20px
+            
         &__button
             background-color: #fff
             color: #000
@@ -124,25 +146,66 @@ body
                 transition: 0.3s
             &:not(:hover)
                 transition: 0.3s
+            @media (max-width: 800px)
+                font-size: 18px
+                padding: 22px 18px
+            @media (max-width: 600px)
+                font-size: 16px
+                padding: 20px 16px
+            @media (max-width: 600px)
+                padding: 14px 10px
           
 .explain
     padding: 120px 0 50px 0
     &-wrap
         display: flex
         justify-content: space-between
+        @media (max-width: 1240px)
+            flex-direction: column
     &-text
         width: 60%
+        @media (max-width: 1240px)
+            width: 100%
+            padding-bottom: 60px
+        @media (max-width: 800px)
+            padding-bottom: 40px
         &__item
             margin: 50px 0 0 0
             max-width: 810px
             line-height: 40px
+            @media (max-width: 1600px)
+                line-height: 35px
+                margin-top: 35px
+                max-width: 750px
+            @media (max-width: 1400px)
+                line-height: 30px
+                margin-top: 25px
+                max-width: 650px
+            @media (max-width: 800px)
+                line-height: 26px
+            @media (max-width: 600px)
+                line-height: 24px
             span
                 font-size: 25px
                 +bold
+                @media (max-width: 1600px)
+                    font-size: 22px
+                @media (max-width: 1600px)
+                    font-size: 20px
+                @media (max-width: 800px)
+                    font-size: 18px
+                @media (max-width: 600px)
+                    font-size: 16px
             p
                 margin: 0
                 font-size: 20px
                 +reg
+                @media (max-width: 1600px)
+                    font-size: 18px
+                @media (max-width: 800px)
+                    font-size: 16px
+                @media (max-width: 600px)
+                    font-size: 14px
                 strong
                     +bold
     &-slider
@@ -152,9 +215,26 @@ body
             max-width: 400px
             margin-left: 170px
             margin-top: 30px
+            @media (max-width: 1600px)
+                margin-top: 0
+            @media (max-width: 1400px)
+                max-width: 350px
+            @media (max-width: 1240px)
+                margin: auto
+                margin-top: 60px
+            @media (max-width: 800px)
+                margin-top: 20px
+            @media (max-width: 600px)
+                width: 300px
+                margin-top: 10px
+                
         &__arrowLeft, &__arrowRight
             img
                 width: 100px
+                @media (max-width: 1600px)
+                    width: 75px
+                @media (max-width: 600px)
+                    width: 60px
             &:hover
                 scale: 1.2
                 transition: 0.3s
@@ -163,10 +243,17 @@ body
                     
     &-image
         width: 40%
+        @media (max-width: 1240px)
+            width: 100%
         margin: auto
     &-cards
         display: flex
         flex-wrap: wrap
+        @media (max-width: 1240px)
+            justify-content: center
+            margin: 0 70px
+        @media (max-width: 1000px)
+            margin: 0 
         &__item
             margin-right: 20px
             margin-bottom: 20px
@@ -180,9 +267,39 @@ body
                 box-shadow: 5px 5px
             &:not(:hover)
                 transition: 0.5s
+            @media (max-width: 1600px)
+                width: 248px
+                height: 140px
+            @media (max-width: 1400px)
+                width: 218px
+                height: 123px
+            @media (max-width: 1240px)
+                width: 248px
+                height: 140px
+            @media (max-width: 800px)
+                width: 198px
+                height: 111px
+            @media (max-width: 480px)
+                width: 160px
+                height: 90px
             img
                 width: 288px
                 height: 162px
+                @media (max-width: 1600px)
+                    width: 248px
+                    height: 140px
+                @media (max-width: 1400px)
+                    width: 218px
+                    height: 123px
+                @media (max-width: 1240px)
+                    width: 248px
+                    height: 140px
+                @media (max-width: 800px)
+                    width: 198px
+                    height: 111px
+                @media (max-width: 480px)
+                    width: 160px
+                    height: 90px
                 
                     
             
