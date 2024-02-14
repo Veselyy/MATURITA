@@ -14,5 +14,9 @@ $("#Aexplain").click(function () {
   // Scrolování na sekci Kontakt
   $("#Afooter").click(function () {
     smoothScroll("#footer");
-  }); 
+  });
+
+  $(".hamburger").click(function(){
+  $(".hamburger").toggleClass('is-active');
+  })
 });
