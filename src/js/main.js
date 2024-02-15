@@ -11,12 +11,12 @@ $(document).ready(function () {
   
     function openModal(modalId) {
       $(modalId).addClass('modal-active');
-      $('body').css("overflow", "hidden");
+      $("body").addClass('body-overflowY')
     }
   
     function closeModal(modalId) {
       $(modalId).removeClass('modal-active');
-      $('body').css("overflow-y", "scroll");
+      $("body").removeClass('body-overflowY')
     }
   
     // Scrolování na sekci explain
