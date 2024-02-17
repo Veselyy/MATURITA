@@ -37,7 +37,7 @@ $(document).ready(function () {
       nextArrow: '.explain-slider__arrowRight'
   });
 
-  $('#offerSlider').slick({
+  $('#toolsSlider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,

@@ -8,10 +8,22 @@
     src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+}
+
 @mixin reg{
     font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 400;
 }
 
 @mixin bold{
     font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+}
+
+@mixin black{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 900;
 }
