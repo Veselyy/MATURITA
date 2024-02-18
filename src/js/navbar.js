@@ -9,6 +9,7 @@ $("#Aexplain").click(function () {
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
   });
+  
   // Scrolování na sekci Nástroje
   $("#Atools").click(function () {
     window.location.href == 'http://127.0.0.1:5500/src/index.html#' ? smoothScroll("#tools") : window.location.href = 'http://127.0.0.1:5500/src/index.html#';
@@ -16,6 +17,7 @@ $("#Aexplain").click(function () {
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
   });
+
   //Přesměrování na sekci O Mně
   $("#Amyself").click(function () {
     window.location.href == 'http://127.0.0.1:5500/src/myself.html#' ? smoothScroll("#myself") : window.location.href = 'http://127.0.0.1:5500/src/myself.html#';
@@ -23,6 +25,14 @@ $("#Aexplain").click(function () {
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
   });
+
+  //Přesměrování na sekci Moje tvorba
+  $("#Amyprojects").click(function () {
+    window.location.href == 'http://127.0.0.1:5500/src/myself.html#' ? smoothScroll("#myprojects") : window.location.href = 'http://127.0.0.1:5500/src/myself.html#';
+    $(".hamburger").removeClass('is-active')
+    $(".navbar-links").removeClass('mobile-nav')
+    $("body").removeClass('body-overflowY')
+});
 
   // Scrolování na sekci Kontakt
   $("#Afooter").click(function () {
