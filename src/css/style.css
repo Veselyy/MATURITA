@@ -963,12 +963,8 @@ body {
   display: flex;
   align-items: center;
 }
-.tools-video img {
+.tools-video video {
   max-width: 400px;
-}
-
-.tools-video {
-  width: 400px;
 }
 
 ul.slick-dots {
