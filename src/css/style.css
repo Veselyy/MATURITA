@@ -87,7 +87,7 @@ body {
 }
 @media (max-width: 600px) {
   .section-title {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -637,7 +637,7 @@ body {
 }
 @media (max-width: 1000px) {
   .explain-text__item p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 800px) {
@@ -647,7 +647,7 @@ body {
 }
 @media (max-width: 600px) {
   .explain-text__item p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .explain-text__item p strong {
@@ -1040,7 +1040,7 @@ body {
 }
 @media (max-width: 800px) {
   .tools-review__text {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .tools-review__text ul {
@@ -1213,7 +1213,7 @@ li.slick-active {
 }
 @media (max-width: 600px) {
   .footer-contact span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .footer-contact__email {
@@ -1226,7 +1226,7 @@ li.slick-active {
 }
 @media (max-width: 1240px) {
   .footer-contact__email {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1000px) {
@@ -1241,7 +1241,7 @@ li.slick-active {
 }
 @media (max-width: 600px) {
   .footer-contact__email {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .footer-contact__socials {
@@ -1393,7 +1393,7 @@ li.slick-active {
 }
 @media (max-width: 1240px) {
   .form__secure {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1000px) {
@@ -1403,12 +1403,12 @@ li.slick-active {
 }
 @media (max-width: 800px) {
   .form__secure {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .form__secure {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .form button {
