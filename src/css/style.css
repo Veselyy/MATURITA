@@ -87,7 +87,7 @@ body {
 }
 @media (max-width: 600px) {
   .section-title {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -404,7 +404,7 @@ body {
 .header {
   background-image: linear-gradient(#000, #3b3b3b);
   height: 100vh;
-  display: flex;
+  padding-top: 120px;
 }
 @media (max-width: 600px) {
   .header-wrap {
@@ -616,7 +616,7 @@ body {
 }
 @media (max-width: 600px) {
   .explain-text__item span {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .explain-text__item p {
@@ -647,7 +647,7 @@ body {
 }
 @media (max-width: 600px) {
   .explain-text__item p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .explain-text__item p strong {
@@ -1040,7 +1040,7 @@ body {
 }
 @media (max-width: 800px) {
   .tools-review__text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .tools-review__text ul {
