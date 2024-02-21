@@ -41,17 +41,17 @@ body {
 }
 @media (max-width: 1600px) {
   .socials-icon {
-    width: 25px;
+    width: 30px;
   }
 }
 @media (max-width: 1240px) {
   .socials-icon {
-    width: 20px;
+    width: 28px;
   }
 }
 @media (max-width: 600px) {
   .socials-icon {
-    width: 15px;
+    width: 25px;
   }
 }
 
@@ -337,7 +337,7 @@ body {
 }
 @media (max-width: 600px) {
   .navbar-links a {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 .navbar-links a:last-child {
@@ -393,7 +393,7 @@ body {
 .mobile-nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 50px;
 }
 
 .header {
@@ -424,31 +424,31 @@ body {
 }
 @media (max-width: 1240px) {
   .header-wrap__title {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 1000px) {
   .header-wrap__title {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 @media (max-width: 800px) {
   .header-wrap__title {
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 @media (max-width: 600px) {
   .header-wrap__title {
     text-align: center;
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 20px;
     line-height: 1.7;
   }
 }
 @media (max-width: 400px) {
   .header-wrap__title {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .header-wrap__title strong {
@@ -487,8 +487,14 @@ body {
 }
 @media (max-width: 800px) {
   .header-wrap__button {
-    font-size: 8px;
-    padding: 10px 6px;
+    font-size: 12px;
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 400px) {
+  .header-wrap__button {
+    font-size: 12px;
+    padding: 12px 8pxs;
   }
 }
 .header-wrap__button:hover {
@@ -600,12 +606,12 @@ body {
 }
 @media (max-width: 800px) {
   .explain-text__item span {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 600px) {
   .explain-text__item span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .explain-text__item p {
@@ -616,27 +622,27 @@ body {
 }
 @media (max-width: 1600px) {
   .explain-text__item p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1240px) {
   .explain-text__item p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1000px) {
   .explain-text__item p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 800px) {
   .explain-text__item p {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .explain-text__item p {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
 .explain-text__item p strong {
@@ -678,17 +684,17 @@ body {
 }
 @media (max-width: 1600px) {
   .explain-slider__arrowLeft img, .explain-slider__arrowRight img {
-    width: 60px;
+    width: 70px;
   }
 }
 @media (max-width: 1000px) {
   .explain-slider__arrowLeft img, .explain-slider__arrowRight img {
-    width: 40px;
+    width: 60px;
   }
 }
 @media (max-width: 600px) {
   .explain-slider__arrowLeft img, .explain-slider__arrowRight img {
-    width: 30px;
+    width: 50px;
   }
 }
 .explain-slider__arrowLeft:hover, .explain-slider__arrowRight:hover {
@@ -770,10 +776,11 @@ body {
     margin: 0 10px 10px 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .explain-cards__item {
-    width: 160px;
-    height: 90px;
+    width: 198px;
+    height: 111px;
+    margin: 0 0 30px 0;
   }
 }
 .explain-cards__item img {
@@ -810,10 +817,10 @@ body {
     height: 79px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .explain-cards__item img {
-    width: 160px;
-    height: 90px;
+    width: 198px;
+    height: 111px;
   }
 }
 
@@ -1018,17 +1025,17 @@ body {
 }
 @media (max-width: 1240px) {
   .tools-review__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1000px) {
   .tools-review__text {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 800px) {
   .tools-review__text {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .tools-review__text ul {
@@ -1058,7 +1065,7 @@ body {
 }
 @media (max-width: 800px) {
   .tools-video video {
-    width: 200px;
+    width: 220px;
   }
 }
 
@@ -1191,17 +1198,17 @@ li.slick-active {
 }
 @media (max-width: 1000px) {
   .footer-contact span {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 800px) {
   .footer-contact span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .footer-contact span {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .footer-contact__email {
@@ -1219,17 +1226,17 @@ li.slick-active {
 }
 @media (max-width: 1000px) {
   .footer-contact__email {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 800px) {
   .footer-contact__email {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (max-width: 600px) {
   .footer-contact__email {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 .footer-contact__socials {
@@ -1287,17 +1294,17 @@ li.slick-active {
 }
 @media (max-width: 1000px) {
   .form label {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 800px) {
   .form label {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .form label {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .form input {
@@ -1386,17 +1393,17 @@ li.slick-active {
 }
 @media (max-width: 1000px) {
   .form__secure {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 800px) {
   .form__secure {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (max-width: 600px) {
   .form__secure {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
 .form button {
@@ -1435,7 +1442,7 @@ li.slick-active {
 }
 @media (max-width: 600px) {
   .form button {
-    font-size: 8px;
+    font-size: 10px;
     margin: auto;
     margin-top: 20px;
   }
