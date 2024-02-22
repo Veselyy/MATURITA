@@ -1169,7 +1169,6 @@ li.slick-active {
 @media (max-width: 1000px) {
   .footer-contact {
     width: 100%;
-    margin-top: 30px;
   }
 }
 @media (max-width: 600px) {
@@ -1177,7 +1176,6 @@ li.slick-active {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
   }
 }
 .footer-contact span {
@@ -1415,33 +1413,34 @@ li.slick-active {
 @media (max-width: 1600px) {
   .form button {
     font-size: 14px;
-    padding: 12px 14px;
+    padding: 14px 16px;
   }
 }
 @media (max-width: 1240px) {
   .form button {
-    font-size: 13px;
-    padding: 10x 12px;
+    padding: 12x 14px;
   }
 }
 @media (max-width: 1000px) {
   .form button {
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 800px) {
   .form button {
-    font-size: 11px;
-    padding: 8px 10px;
+    padding: 10px 12px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 600px) {
   .form button {
-    font-size: 10px;
+    font-size: 12px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
