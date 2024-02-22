@@ -4,7 +4,7 @@ $(document).ready(function () {
   }
 // Scrolování na sekci O myšlenkových mapách
 $("#Aexplain").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/src/index.html#' ? smoothScroll("#explain") : window.location.href = 'http://127.0.0.1:5500/src/index.html#';
+    window.location.href == 'http://127.0.0.1:5500/index.html#' ? smoothScroll("#explain") : window.location.href = 'http://127.0.0.1:5500/index.html#';
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
@@ -12,7 +12,7 @@ $("#Aexplain").click(function () {
   
   // Scrolování na sekci Nástroje
   $("#Atools").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/src/index.html#' ? smoothScroll("#tools") : window.location.href = 'http://127.0.0.1:5500/src/index.html#';
+    window.location.href == 'http://127.0.0.1:5500/index.html#' ? smoothScroll("#tools") : window.location.href = 'http://127.0.0.1:5500/index.html#';
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
@@ -20,7 +20,7 @@ $("#Aexplain").click(function () {
 
   //Přesměrování na sekci O Mně
   $("#Amyself").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/src/myself.html#' ? smoothScroll("#myself") : window.location.href = 'http://127.0.0.1:5500/src/myself.html#';
+    window.location.href == 'http://127.0.0.1:5500/myself.html#' ? smoothScroll("#myself") : window.location.href = 'http://127.0.0.1:5500/myself.html#';
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
@@ -28,7 +28,7 @@ $("#Aexplain").click(function () {
 
   //Přesměrování na sekci Moje tvorba
   $("#Amyprojects").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/src/myself.html#' ? smoothScroll("#myprojects") : window.location.href = 'http://127.0.0.1:5500/src/myself.html#';
+    window.location.href == 'http://127.0.0.1:5500/myself.html#' ? smoothScroll("#myprojects") : window.location.href = 'http://127.0.0.1:5500/myself.html#';
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
