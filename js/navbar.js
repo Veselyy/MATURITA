@@ -28,7 +28,7 @@ $("#Aexplain").click(function () {
 
   //Přesměrování na sekci Moje tvorba
   $("#Amyprojects").click(function () {
-    window.location.href.indexOf("myself.html") !== -1 ? smoothScroll("#myprojects") : window.location.href = "myself.html";
+    window.location.href.indexOf("myself.html") !== -1 ? smoothScroll("#myprojects") : window.location = "myself.html";
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
