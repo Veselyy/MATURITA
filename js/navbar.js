@@ -4,7 +4,7 @@ $(document).ready(function () {
   }
 // Scrolování na sekci O myšlenkových mapách
 $("#Aexplain").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/index.html#' ? smoothScroll("#explain") : window.location.href = 'http://127.0.0.1:5500/index.html#';
+    window.location.href == 'https://veselyy.github.io/MATURITA/#' ? smoothScroll("#explain") : window.location.href = 'https://veselyy.github.io/MATURITA/#';
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
@@ -12,7 +12,7 @@ $("#Aexplain").click(function () {
   
   // Scrolování na sekci Nástroje
   $("#Atools").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/index.html#' ? smoothScroll("#tools") : window.location.href = 'http://127.0.0.1:5500/index.html#';
+    window.location.href == 'https://veselyy.github.io/MATURITA/#' ? smoothScroll("#tools") : window.location.href = 'https://veselyy.github.io/MATURITA/#';
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
