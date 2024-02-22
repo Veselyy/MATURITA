@@ -51,11 +51,6 @@ body {
 }
 @media (max-width: 600px) {
   .socials-icon {
-    width: 25px;
-  }
-}
-@media (max-width: 600px) {
-  .socials-icon {
     width: 20px;
   }
 }
@@ -77,12 +72,12 @@ body {
 }
 @media (max-width: 1100px) {
   .section-title {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 @media (max-width: 800px) {
   .section-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 600px) {
@@ -331,7 +326,6 @@ body {
 @media (max-width: 1240px) {
   .navbar-links a {
     margin-right: 20px;
-    font-size: 12px;
   }
 }
 @media (max-width: 1000px) {
@@ -480,7 +474,6 @@ body {
 }
 @media (max-width: 1240px) {
   .header-wrap__button {
-    font-size: 14px;
     padding: 14px 12px;
   }
 }
@@ -492,7 +485,6 @@ body {
 }
 @media (max-width: 800px) {
   .header-wrap__button {
-    font-size: 12px;
     padding: 12px 8px;
   }
 }
@@ -606,12 +598,12 @@ body {
 }
 @media (max-width: 1000px) {
   .explain-text__item span {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media (max-width: 800px) {
   .explain-text__item span {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 600px) {
@@ -632,7 +624,7 @@ body {
 }
 @media (max-width: 1240px) {
   .explain-text__item p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1000px) {
@@ -642,7 +634,7 @@ body {
 }
 @media (max-width: 800px) {
   .explain-text__item p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (max-width: 600px) {
@@ -663,7 +655,7 @@ body {
 }
 @media (max-width: 1600px) {
   .explain-slider__arrows {
-    margin-top: 0;
+    margin-top: -15px;
     max-width: 250px;
   }
 }
@@ -1024,7 +1016,7 @@ body {
 }
 @media (max-width: 1600px) {
   .tools-review__text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
   }
 }
@@ -1038,7 +1030,7 @@ body {
     font-size: 12px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   .tools-review__text {
     font-size: 11px;
   }
@@ -1203,7 +1195,7 @@ li.slick-active {
 }
 @media (max-width: 1000px) {
   .footer-contact span {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (max-width: 800px) {
@@ -1213,7 +1205,7 @@ li.slick-active {
 }
 @media (max-width: 600px) {
   .footer-contact span {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .footer-contact__email {
@@ -1221,7 +1213,7 @@ li.slick-active {
 }
 @media (max-width: 1600px) {
   .footer-contact__email {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1240px) {
@@ -1236,7 +1228,7 @@ li.slick-active {
 }
 @media (max-width: 800px) {
   .footer-contact__email {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 @media (max-width: 600px) {
@@ -1294,7 +1286,7 @@ li.slick-active {
 }
 @media (max-width: 1240px) {
   .form label {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1000px) {
@@ -1304,12 +1296,12 @@ li.slick-active {
 }
 @media (max-width: 800px) {
   .form label {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (max-width: 600px) {
   .form label {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 .form input {
@@ -1319,28 +1311,28 @@ li.slick-active {
 }
 @media (max-width: 1600px) {
   .form input {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1240px) {
   .form input {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1000px) {
   .form input {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 @media (max-width: 800px) {
   .form input {
-    font-size: 8px;
+    font-size: 11px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 600px) {
   .form input {
-    font-size: 6px;
+    font-size: 9px;
   }
 }
 .form textarea {
@@ -1350,13 +1342,13 @@ li.slick-active {
 }
 @media (max-width: 1600px) {
   .form textarea {
-    font-size: 14px;
+    font-size: 15px;
     height: 150px;
   }
 }
 @media (max-width: 1240px) {
   .form textarea {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 1100px) {
@@ -1366,20 +1358,20 @@ li.slick-active {
 }
 @media (max-width: 1000px) {
   .form textarea {
-    font-size: 10px;
+    font-size: 13px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 800px) {
   .form textarea {
-    font-size: 8px;
+    font-size: 11px;
     height: 60px;
     margin-bottom: 5px;
   }
 }
 @media (max-width: 600px) {
   .form textarea {
-    font-size: 6px;
+    font-size: 9px;
     height: 60px;
   }
 }
@@ -1388,27 +1380,27 @@ li.slick-active {
 }
 @media (max-width: 1600px) {
   .form__secure {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 1240px) {
   .form__secure {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1000px) {
   .form__secure {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 800px) {
   .form__secure {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media (max-width: 600px) {
   .form__secure {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 .form button {
@@ -1428,20 +1420,20 @@ li.slick-active {
 }
 @media (max-width: 1240px) {
   .form button {
-    font-size: 12px;
+    font-size: 13px;
     padding: 10px 14px;
   }
 }
 @media (max-width: 1000px) {
   .form button {
-    font-size: 10px;
+    font-size: 12px;
     padding: 8px 12px;
     margin-top: 20px;
   }
 }
 @media (max-width: 800px) {
   .form button {
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 10px;
   }
 }
@@ -1485,6 +1477,11 @@ li.slick-active {
   letter-spacing: 2px;
   font-family: "Montserrat-Bold", sans-serif;
   font-weight: 700;
+}
+.myself-title strong {
+  color: #848484;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
 }
 .myself-wrap {
   display: flex;
