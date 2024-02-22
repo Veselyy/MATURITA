@@ -12,7 +12,7 @@ $("#Aexplain").click(function () {
   
   // Scrolování na sekci Nástroje
   $("#Atools").click(function () {
-    window.location.href == 'https://veselyy.github.io/MATURITA/#' ? smoothScroll("#tools") : window.location.href = 'https://veselyy.github.io/MATURITA/#';
+    window.location.href.indexOf("index.html") !== -1 ? smoothScroll("#tools") : window.location.href = "index.html";
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
@@ -20,7 +20,7 @@ $("#Aexplain").click(function () {
 
   //Přesměrování na sekci O Mně
   $("#Amyself").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/myself.html#' ? smoothScroll("#myself") : window.location.href = 'http://127.0.0.1:5500/myself.html#';
+    window.location.href.indexOf("myself.html") !== -1 ? smoothScroll("#myself") : window.location.href = "myself.html";
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
@@ -28,7 +28,7 @@ $("#Aexplain").click(function () {
 
   //Přesměrování na sekci Moje tvorba
   $("#Amyprojects").click(function () {
-    window.location.href == 'http://127.0.0.1:5500/myself.html#' ? smoothScroll("#myprojects") : window.location.href = 'http://127.0.0.1:5500/myself.html#';
+    window.location.href.indexOf("myself.html") !== -1 ? smoothScroll("#myprojects") : window.location.href = "myself.html";
     $(".hamburger").removeClass('is-active')
     $(".navbar-links").removeClass('mobile-nav')
     $("body").removeClass('body-overflowY')
