@@ -1090,7 +1090,7 @@ body {
 }
 .tools-review__text {
   margin: 0;
-  padding-right: 15px;
+  padding: 10px 15px 10px 0;
   font-size: 22px;
   line-height: 2.2;
 }
