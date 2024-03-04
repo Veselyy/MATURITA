@@ -9,42 +9,43 @@
     <footer class="footer">
         <div class="container">
             <h2 class="footer-title section-title"><strong>Máte dotaz?</strong> Stačí mi napsat ✍️</h2>
-            <div class="footer-wrap">
-                <div class="footer-contact">
-                    <span>Email: <a href="mailto:imthemartinvesely@gmail.com" class="footer-contact__email">imthemartinvesely@gmail.com</a></span>
-                    <div class="footer-contact__socials">
-                        <a target="_blank" href="https://www.instagram.com/imthemartas/">
-                            <img class="SocialHover socials-icon" src="./img/instagram-icon.svg" alt="Instagram">
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/martin.v2005/">
-                            <img class="SocialHover socials-icon" src="./img/facebook-icon.svg" alt="Facebook">
-                        </a>
+                <div class="footer-wrap">
+                    <div class="footer-contact">
+                        <span>Email: <a href="mailto:imthemartinvesely@gmail.com" class="footer-contact__email">imthemartinvesely@gmail.com</a></span>
+                            <div class="footer-contact__socials">
+                                <a target="_blank" href="https://www.instagram.com/imthemartas/">
+                                    <img class="SocialHover socials-icon" src="./img/instagram-icon.svg" alt="Instagram">
+                                </a>
+                                
+                                <a target="_blank" href="https://www.facebook.com/martin.v2005/">
+                                    <img class="SocialHover socials-icon" src="./img/facebook-icon.svg" alt="Facebook">
+                                </a>
+                            </div>
+                    </div>
+
+                    <div class="footer-form">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form" autocomplete="off">
+                            <input type="hidden" name="access_key" value="cf332940-3817-4578-a7fe-f9d995719c23">
+                            <!--Jméno předmětu v emailu-->
+                            <input type="hidden" name="from_name" value="Dotaz z MP">
+
+                            <label for="name">Jméno:</label> 
+                            <input type="text" name="name" id="name" required autocomplete="off">
+
+                            <label for="email">Email:</label> 
+                            <input type="email" name="email" id="email" required autocomplete="off">
+
+                            <label for="message">Zpráva:</label> 
+                            <textarea type="text" name="message" id="message" required></textarea>
+
+                            <span class="form__secure">
+                                Tento formulář je chráněn pomocí reCAPTCHA Google <a target="_blank" href="https://policies.google.com/privacy">Zásady ochrany osobních údajů</a>
+                                | <a target="_blank" href="https://policies.google.com/terms">Podmínky služby</a>
+                            </span>
+                                <button type="submit" id="form-btn" class="ViewHover button">ODESLAT</button>
+                        </form>
                     </div>
                 </div>
-
-                <div class="footer-form">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="form" id="form" autocomplete="off">
-                        <input type="hidden" name="access_key" value="cf332940-3817-4578-a7fe-f9d995719c23">
-                        <!--Jméno předmětu v emailu-->
-                        <input type="hidden" name="from_name" value="Dotaz z MP">
-
-                        <label for="name">Jméno:</label> 
-                        <input type="text" name="name" id="name" required autocomplete="off">
-
-                        <label for="email">Email:</label> 
-                        <input type="email" name="email" id="email" required autocomplete="off">
-
-                        <label for="message">Zpráva:</label> 
-                        <textarea type="text" name="message" id="message" required></textarea>
-
-                        <span class="form__secure">
-                            Tento formulář je chráněn pomocí reCAPTCHA Google <a target="_blank" href="https://policies.google.com/privacy">Zásady ochrany osobních údajů</a>
-                             | <a target="_blank" href="https://policies.google.com/terms">Podmínky služby</a>
-                        </span>
-                            <button type="submit" id="form-btn" class="ViewHover button">ODESLAT</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </footer>
 </body>
