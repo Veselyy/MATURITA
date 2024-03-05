@@ -689,7 +689,7 @@ body {
 }
 @media (max-width: 1600px) {
   .explain-slider__arrows {
-    margin-top: -15px;
+    margin-top: 0px;
     max-width: 250px;
   }
 }
