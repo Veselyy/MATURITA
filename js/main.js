@@ -65,7 +65,4 @@ $(document).ready(function () {
         closeModal(`#myProjectsModal_${i}`);
       });
     }
-  
-   
-  
   });

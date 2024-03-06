@@ -29,7 +29,6 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   height: 100%;
 }
@@ -1116,7 +1115,17 @@ body {
   }
 }
 .tools-review__text ul {
-  padding-left: 30px;
+  padding-left: 50px;
+}
+@media (max-width: 1600px) {
+  .tools-review__text ul {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .tools-review__text ul {
+    padding-left: 15px;
+  }
 }
 .tools-video {
   display: flex;
