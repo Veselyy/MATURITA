@@ -1130,38 +1130,42 @@
   }
 }
 
-ul.slick-dots {
-  display: inline-block;
-  margin-bottom: -30px;
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 @media (max-width: 1000px) {
-  ul.slick-dots {
-    margin-bottom: -10px;
+  .slick-dots {
+    margin-top: 10px;
   }
 }
-ul.slick-dots li {
+.slick-dots li {
+  margin-right: 15px;
+  background-color: #fff;
   border: solid 3px black;
   border-radius: 100px;
 }
 @media (max-width: 1600px) {
-  ul.slick-dots li {
+  .slick-dots li {
     width: 15px;
     height: 15px;
   }
 }
 @media (max-width: 1000px) {
-  ul.slick-dots li {
+  .slick-dots li {
     width: 13px;
     height: 13px;
     border: solid 2px black;
   }
 }
-ul.slick-dots li button {
+.slick-dots li button {
   visibility: hidden;
 }
 
 li.slick-active {
-  background-color: black;
+  background-color: #000;
 }
 
 .footer {

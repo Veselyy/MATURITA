@@ -643,13 +643,16 @@
                 width: 250px
             @media (max-width: 800px)
                 width: 220px
-
-ul.slick-dots
-    display: inline-block
-    margin-bottom: -30px
+.slick-dots
+    list-style: none
+    display: flex
+    justify-content: center
+    margin-top: 30px
     @media (max-width: 1000px)
-        margin-bottom: -10px
+        margin-top: 10px
     li
+        margin-right: 15px
+        background-color: $df-white
         border: solid 3px black
         border-radius: 100px
         @media (max-width: 1600px)
@@ -661,9 +664,8 @@ ul.slick-dots
             border: solid 2px black
         button
             visibility: hidden
-
 li.slick-active
-    background-color: black
+    background-color: $df-black
 //forms
 .footer
     padding: 120px 0 210px 0
