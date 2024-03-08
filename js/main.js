@@ -30,16 +30,14 @@ $(document).ready(function () {
   });
 
   // Slidery
-  var explain = '#explainSlider';
-  var tools = '#toolsSlider';
-  $(explain).slick({
+  $('#explainSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: '.explain-slider__arrowLeft',
     nextArrow: '.explain-slider__arrowRight'
   });
 
-  $(tools).slick({
+  $('#toolsSlider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
