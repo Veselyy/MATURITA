@@ -6,7 +6,15 @@ $(document).ready(function () {
 
   // Scrolování na sekci O myšlenkových mapách
   $('#Aexplain').click(function () {
-    window.location.href.indexOf('index.html') !== -1 ? smoothScroll('#explain') : window.location.href = 'index.html';
+    if(window.location.href.indexOf('index.html') !== -1){
+      smoothScroll('#explain');
+    }
+    else if(window.location.href.indexOf('index.html') == -1){
+      window.location.href = 'index.html';
+    }
+    else{
+      smoothScroll('#explain');
+    }
     $('.hamburger').removeClass('is-active');
     $('.navbar-links').removeClass('mobile-nav');
     $('body').removeClass('body-overflowY');
