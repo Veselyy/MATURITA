@@ -10,7 +10,7 @@ $(document).ready(function () {
       smoothScroll('#explain');
     }
     else if(window.location.href.indexOf('index.html') == -1){
-      window.location.href = 'index.html';
+      
     }
     else{
       smoothScroll('#explain');
