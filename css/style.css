@@ -1111,22 +1111,32 @@
     margin-bottom: 40px;
   }
 }
-.tools-video video {
-  max-width: 400px;
+.tools-video iframe {
+  width: 560px;
+  height: 315px;
+}
+@media (max-width: 1600px) {
+  .tools-video iframe {
+    width: 400px;
+    height: 225px;
+  }
 }
 @media (max-width: 1100px) {
-  .tools-video video {
+  .tools-video iframe {
     width: 350px;
+    height: 197px;
   }
 }
 @media (max-width: 1000px) {
-  .tools-video video {
+  .tools-video iframe {
     width: 250px;
+    height: 141px;
   }
 }
 @media (max-width: 800px) {
-  .tools-video video {
+  .tools-video iframe {
     width: 220px;
+    height: 124px;
   }
 }
 
