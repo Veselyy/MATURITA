@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O mně</title>
+    <!--ikona, která je vidět vedle názvu karty-->
+    <link rel="icon" href="./img/favicon-myself.svg">
+    <!--napojení css stylu-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--napojení grafiky sliderů-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <nav id="navbar"></nav>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-wrap">
+                <h1 class="header-wrap__title">
+                    Pomáhám lidem s  <br> <strong>MYŠLENKOVÝMI MAPY</strong>
+                </h1>
+
+                <a id="myselfButton" href="#">
+                    <button class="header-wrap__button"> 👇 POJĎME NA TO 👇</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!--Moje sekce, představení-->
+    <section id="myself" class="myself">
+        <div class="container">
+            <h2 class="myself-title section-title">Kreativní nadšenec, který rád <strong>tvoří</strong> a <strong>inspiruje</strong></h2>
+                <div class="myself-wrap">
+                    <div class="myself-text">
+                        <p class="myself-text__desc">
+                            Zdravím, já jsem <u>Martin</u>, jsem z venkova a věnuji se <strong>IT</strong> 💻 už 4 rokem. 
+                                <br>
+                            Jsem <strong>student,</strong> rád dělám <strong>sporty</strong> 🏃‍♂️ a rád se bavím s lidmi, kteří mi mají 
+                                <strong>co předat</strong>. 
+                                <br><br>
+                            Tvorbě <strong>myšlenkových map</strong> se věnuji už druhým rokem,
+                                a proto jsem vytvořil webovou stránku pro jejich <strong>přehled</strong> a <strong>porozumění</strong> 🧠.
+                                <br><br>
+                            Na této stránce se můžete inspirovat mými projekty a různými<strong>způsoby využití</strong> myšlenkových map.
+                                <br><br>
+                            Moje <strong>motto</strong>, kterým se řídím od doby, když jsem zjistil, že text se dá <strong>zobrazit </strong>
+                                i ve smysluplných obrazcích je 
+                                <br>
+                            <i><strong>“</strong><u>když něco nevidíš v textu</u> 📄, <u>nakresli si to</u> 🖌️<strong>”</strong>.</i>
+                                <br><br>
+                            Pro více informací ohledně <strong>myšlenkových map</strong> nebo zápisů <strong>poznámek 📝 </strong>
+                            mě neváhejte kontaktovat
+                                <br> 
+                            👉👉 <a href="mailto:imthemartinvesely@gmail.com">imthemartinvesely@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="myself-image">
+                        <img src="./img/myself-image.jpg" alt="Obrázek sebe">
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!--Moje tvorba, pár ukázek z mé tvorby -->
+    <section id="myprojects" class="myProjects">
+        <div class="container">
+            <div class="myProjects-wrap">
+                <h2 class="myProjects-wrap__title section-title"><strong>Chcete se inspirovat?</strong><br>Zde máte pár úkazek ⇣</h2>
+                    <div class="myProjects-cards">
+                        <div class="myProjects-item">
+                            <div class="myProjects-item__image">
+                                <img src="./img/MojeTvorba-1.jpg" alt="Moje tvorba 1">
+                            </div>
+                            <button id="myProjectsWiden_1" class="ViewHover button">ZOBRAZIT</button>
+                        </div>
+
+                        <div class="myProjects-item">
+                            <div class="myProjects-item__image">
+                                <img src="./img/MojeTvorba-2.jpg" alt="Moje tvorba 2">
+                            </div>
+                            <button id="myProjectsWiden_2" class="ViewHover button">ZOBRAZIT</button>
+                        </div>
+
+                        <div class="myProjects-item">
+                            <div class="myProjects-item__image">
+                                <img src="./img/MojeTvorba-3.jpg" alt="Moje tvorba 3">
+                            </div>
+                            <button id="myProjectsWiden_3" class="ViewHover button">ZOBRAZIT</button>
+                        </div>
+
+                        <div class="myProjects-item">
+                            <div class="myProjects-item__image">
+                                <img src="./img/MojeTvorba-4.jpg" alt="Moje tvorba 4">
+                            </div>
+                            <button id="myProjectsWiden_4" class="ViewHover button">ZOBRAZIT</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!--Toto se zobrazí při kliknutí na obrázky v sekci "Moje Tvorba"-->
+        <div id="myProjectsModal_1" class="modal">
+            <div class="modal-dialog">
+                <button id="myProjectsClose_1" class="modal-dialog__close">x</button>
+                <img src="./img/MojeTvorba-1.jpg" alt="Obrázek 1">
+            </div>
+        </div>
+
+        <div id="myProjectsModal_2" class="modal">
+            <div class="modal-dialog">
+                <button id="myProjectsClose_2" class="modal-dialog__close">x</button>
+                <img src="./img/MojeTvorba-2.jpg" alt="Obrázek 2">
+            </div>
+        </div>
+
+        <div id="myProjectsModal_3" class="modal">
+            <div class="modal-dialog">
+                <button id="myProjectsClose_3" class="modal-dialog__close">x</button>
+                <img src="./img/MojeTvorba-3.jpg" alt="Obrázek 3">
+            </div>
+        </div>
+
+        <div id="myProjectsModal_4" class="modal">
+            <div class="modal-dialog">
+                <button id="myProjectsClose_4" class="modal-dialog__close">x</button>
+                <img src="./img/MojeTvorba-4.jpg" alt="Obrázek 4">
+            </div>
+        </div>
+    </section>
+
+    <!--Kontakt, formulář na dotazy-->
+    <footer id="footer"></footer>
+
+    
+<!--link na jQuery (knihovna) zjednodušení v javascriptu-->
+<script src="./js/jquery-3.7.1.min.js"></script>
+
+<!--link na slidery v javascriptu-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!--link na hlavní soubor v javascriptu-->
+<script src="./js/main.js"></script>
+</body>
+</html>
