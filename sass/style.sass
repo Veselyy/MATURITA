@@ -635,14 +635,21 @@
         align-items: center
         @media (max-width: 800px)
             margin-bottom: 40px
-        video
-            max-width: 400px
+        iframe
+            width: 560px
+            height: 315px
+            @media (max-width: 1600px)
+                width: 400px
+                height: 225px
             @media (max-width: 1100px)
                 width: 350px
+                height: 197px
             @media (max-width: 1000px)
                 width: 250px
+                height: 141px
             @media (max-width: 800px)
                 width: 220px
+                height: 124px
 .slick-dots
     list-style: none
     display: flex
