@@ -4,16 +4,17 @@ $(document).ready(function () {
   $('#navbar').load('navbar.html');
   $('#footer').load('footer.html');
 
-  //definování funkce scrollování na danou sekci, target = cílový element, offset je že to dojede úplně nahoru toho elementu
+  /*definování funkce scrollování na danou sekci, target = cílový element, 
+  offset je že to dojede úplně nahoru toho elementu*/
   function smoothScroll(target) {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
-  //definování funkce k zobrazení
+  //definování funkce k zvětšení obrázku
   function openModal(modalId) {
     $(modalId).addClass('modal-active');
     $('body').addClass('body-overflowY');
   }
-  //definování funkce k zavření obrázků
+  //definování funkce k zmenšení obrázků
   function closeModal(modalId) {
     $(modalId).removeClass('modal-active');
     $('body').removeClass('body-overflowY');

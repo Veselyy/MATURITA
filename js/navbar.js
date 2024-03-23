@@ -49,22 +49,26 @@ $(document).ready(function () {
     $('.hamburger').toggleClass('is-active');
     $('.navbar-links').toggleClass('mobile-nav');
     //změna ikonek rozdílné barvy
-    var Mobile_navbar_SRC_ig = ($('#ig-nav').attr('src') === './img/instagram-icon.svg') ? './img/instagram-icon2.svg' : './img/instagram-icon.svg';
+    var Mobile_navbar_SRC_ig = ($('#ig-nav').attr('src') === './img/instagram-icon.svg') ?
+     './img/instagram-icon2.svg' : './img/instagram-icon.svg';
     $('#ig-nav').attr('src', Mobile_navbar_SRC_ig);
   
-    var Mobile_navbar_SRC_f = ($('#f-nav').attr('src') === './img/facebook-icon.svg') ? './img/facebook-icon2.svg' : './img/facebook-icon.svg';
+    var Mobile_navbar_SRC_f = ($('#f-nav').attr('src') === './img/facebook-icon.svg') ?
+     './img/facebook-icon2.svg' : './img/facebook-icon.svg';
     $('#f-nav').attr('src', Mobile_navbar_SRC_f);
     //aby zmizela scrollovací lišta
     $('body').toggleClass('body-overflowY');
   });
   
   $('#ig-nav').hover(function(){
-    var Desktop_navbar_SRC_ig = ($('#ig-nav').attr('src') === './img/instagram-icon.svg') ? './img/instagram-icon2.svg' : './img/instagram-icon.svg';
+    var Desktop_navbar_SRC_ig = ($('#ig-nav').attr('src') === './img/instagram-icon.svg') ?
+     './img/instagram-icon2.svg' : './img/instagram-icon.svg';
     $('#ig-nav').attr('src', Desktop_navbar_SRC_ig);
   });
   
   $('#f-nav').hover(function(){
-    var Desktop_navbar_SRC_f = ($('#f-nav').attr('src') === './img/facebook-icon.svg') ? './img/facebook-icon2.svg' : './img/facebook-icon.svg';
+    var Desktop_navbar_SRC_f = ($('#f-nav').attr('src') === './img/facebook-icon.svg') ?
+     './img/facebook-icon2.svg' : './img/facebook-icon.svg';
     $('#f-nav').attr('src', Desktop_navbar_SRC_f);
     });
 });
