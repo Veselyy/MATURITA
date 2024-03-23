@@ -4,29 +4,18 @@ $(document).ready(function () {
   $('#navbar').load('navbar.html');
   $('#footer').load('footer.html');
 
-<<<<<<< HEAD
   /*definování funkce scrollování na danou sekci, target = cílový element, 
   offset je že to dojede úplně nahoru toho elementu*/
   function smoothScroll(target) {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
-  //definování funkce k zvětšení obrázku
-=======
-  //definování funkce scrollování na danou sekci, target = cílový element, offset je že to dojede úplně nahoru toho elementu
-  function smoothScroll(target) {
-    $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
-  }
+  
   //definování funkce k zobrazení
->>>>>>> 623645113cbb24619955ea326c89ac1b1f7b4fb7
   function openModal(modalId) {
     $(modalId).addClass('modal-active');
     $('body').addClass('body-overflowY');
   }
-<<<<<<< HEAD
-  //definování funkce k zmenšení obrázků
-=======
   //definování funkce k zavření obrázků
->>>>>>> 623645113cbb24619955ea326c89ac1b1f7b4fb7
   function closeModal(modalId) {
     $(modalId).removeClass('modal-active');
     $('body').removeClass('body-overflowY');
