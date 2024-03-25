@@ -1,6 +1,5 @@
 //toto nám zajistí, že se kód načte až po načtení stránky, abz nedošlo, že nějaké prvky nenajde
 $(document).ready(function () {
-  window.location.href += "index.html";
  // Zobrazení navigace a formuláře na hlavní stránce
   $('#navbar').load('navbar.html');
   $('#footer').load('footer.html');
@@ -11,19 +10,6 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
 
-    
-  //definování funkce k zobrazení
-  function openModal(modalId) {
-    $(modalId).addClass('modal-active');
-    $('body').addClass('body-overflowY');
-  }
-  //definování funkce k zavření obrázků
-  function closeModal(modalId) {
-    $(modalId).removeClass('modal-active');
-    $('body').removeClass('body-overflowY');
-  }
-  
-  // Scrolování na sekci O myšlenkových mapách
   $('#explainButton').click(function () {
     smoothScroll('#explain');
   });
