@@ -3,18 +3,47 @@ $(document).ready(function () {
   function smoothScroll(target) {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
+  $("a.NavbarHover").click(function(event){
+    event.preventDefault(); // Zamezí výchozímu chování odkazu
+
+    var sectionId = $(this).attr("data-section"); // Získá ID sekce z atributu data-section
+    checkAndScroll(sectionId); // Zavolá funkci pro kontrolu a scrollování
+});
+
+function checkAndScroll(sectionId) {
+    // Zkontroluje, zda je sekce na této stránce
+    var sectionOnThisPage = $("#" + sectionId);
+    if (sectionOnThisPage.length > 0) {
+        // Pokud je sekce na této stránce, provede scrollování na ni s určitým zpožděním
+            $('html, body').animate({
+                scrollTop: sectionOnThisPage.offset().top
+            }, 1000);
+    } else if(window.location.pathname === '/index.html'){
+        // Pokud sekce není na této stránce, přesměruje na druhý HTML soubor s identifikátorem sekce v URL
+        window.location.href = "myself.html#" + sectionId;
+    }else{
+      window.location.href = "index.html#" + sectionId;
+    }
+}
+
+
+
+
+
+
+
+
 
   // Scrolování na sekci O myšlenkových mapách
   $('#Aexplain').click(function () {
-    window.location.href.indexOf('index.html') !== -1 ? smoothScroll('#explain') : window.location.href = 'index.html';
     $('.hamburger').removeClass('is-active');
     $('.navbar-links').removeClass('mobile-nav');
     $('body').removeClass('body-overflowY');
   });
+
   
   // Scrolování na sekci Nástroje
   $('#Atools').click(function () {
-    window.location.href.indexOf('index.html') !== -1 ? smoothScroll('#tools') : window.location.href = 'index.html';
     $('.hamburger').removeClass('is-active');
     $('.navbar-links').removeClass('mobile-nav');
     $('body').removeClass('body-overflowY');
@@ -22,7 +51,6 @@ $(document).ready(function () {
 
   //Přesměrování na sekci O Mně
   $('#Amyself').click(function () {
-    window.location.href.indexOf('myself.html') !== -1 ? smoothScroll('#myself') : window.location.href = 'myself.html';
     $('.hamburger').removeClass('is-active');
     $('.navbar-links').removeClass('mobile-nav');
     $('body').removeClass('body-overflowY');
@@ -30,7 +58,6 @@ $(document).ready(function () {
 
   //Přesměrování na sekci Moje tvorba
   $('#Amyprojects').click(function () {
-    window.location.href.indexOf('myself.html') !== -1 ? smoothScroll('#myprojects') : window.location = 'myself.html';
     $('.hamburger').removeClass('is-active');
     $('.navbar-links').removeClass('mobile-nav');
     $('body').removeClass('body-overflowY');
