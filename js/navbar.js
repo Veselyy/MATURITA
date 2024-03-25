@@ -1,8 +1,5 @@
 $(document).ready(function () {
   
-  function smoothScroll(target) {
-    $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
-  }
   $("a.NavbarHover").click(function(event){
     event.preventDefault(); // Zamezí výchozímu chování odkazu
 
@@ -14,15 +11,19 @@ function checkAndScroll(sectionId) {
     // Zkontroluje, zda je sekce na této stránce
     var sectionOnThisPage = $("#" + sectionId);
     if (sectionOnThisPage.length > 0) {
-        // Pokud je sekce na této stránce, provede scrollování na ni s určitým zpožděním
             $('html, body').animate({
                 scrollTop: sectionOnThisPage.offset().top
             }, 1000);
-    } else if(window.location.href !== "myself.html#" + sectionId){
+    }
+    else if(window.location.href.includes('index.html')){
         // Pokud sekce není na této stránce, přesměruje na druhý HTML soubor s identifikátorem sekce v URL
         window.location.href = "myself.html#" + sectionId;
-    }else{
+        console.log('Slovo "example" se nachází v URL adrese.');
+    }
+    else{
+      // Pokud sekce není na této stránce, přesměruje na druhý HTML soubor s identifikátorem sekce v URL
       window.location.href = "index.html#" + sectionId;
+      console.log('Slovo "example" se NEnachází v URL adrese.');
     }
 }
 
