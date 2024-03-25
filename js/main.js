@@ -1,5 +1,6 @@
 //toto nám zajistí, že se kód načte až po načtení stránky, abz nedošlo, že nějaké prvky nenajde
 $(document).ready(function () {
+  window.location.href += "index.html";
  // Zobrazení navigace a formuláře na hlavní stránce
   $('#navbar').load('navbar.html');
   $('#footer').load('footer.html');
