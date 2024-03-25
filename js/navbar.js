@@ -18,7 +18,7 @@ function checkAndScroll(sectionId) {
             $('html, body').animate({
                 scrollTop: sectionOnThisPage.offset().top
             }, 1000);
-    } else if(window.location.pathname !== "myself.html#" + sectionId){
+    } else if(window.location.href !== "myself.html#" + sectionId){
         // Pokud sekce není na této stránce, přesměruje na druhý HTML soubor s identifikátorem sekce v URL
         window.location.href = "myself.html#" + sectionId;
     }else{
