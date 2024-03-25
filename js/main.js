@@ -10,6 +10,19 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
 
+    
+  //definování funkce k zobrazení
+  function openModal(modalId) {
+    $(modalId).addClass('modal-active');
+    $('body').addClass('body-overflowY');
+  }
+  //definování funkce k zavření obrázků
+  function closeModal(modalId) {
+    $(modalId).removeClass('modal-active');
+    $('body').removeClass('body-overflowY');
+  }
+  
+  // Scrolování na sekci O myšlenkových mapách
   $('#explainButton').click(function () {
     smoothScroll('#explain');
   });
