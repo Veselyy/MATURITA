@@ -10,7 +10,6 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
 
-    
   //definování funkce k zobrazení
   function openModal(modalId) {
     $(modalId).addClass('modal-active');
