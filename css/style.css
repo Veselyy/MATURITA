@@ -1152,6 +1152,8 @@
   }
 }
 .slick-dots li {
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
   background-color: #fff;
   border: solid 3px black;
