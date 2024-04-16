@@ -3,10 +3,10 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
   }
 
-  $("a.NavbarHover").click(function(event){
+  $('a.NavbarHover').click(function(event){
     event.preventDefault(); // Zamezí výchozímu chování odkazu
 
-    var idSekce = $(this).attr("data-section"); // Získá ID sekce z atributu data-section
+    var idSekce = $(this).attr('data-section'); // Získá ID sekce z atributu data-section
     kontrolaAscroll(idSekce); // Zavolá funkci pro kontrolu a scrollování
 });
 
@@ -16,15 +16,15 @@ function kontrolaAscroll(idSekce) {
     if (sekceNaStrance.length > 0) {
       smoothScroll(sekceNaStrance);
     }
-    else if(window.location.href.includes('index.html')){
+    else if($('body').hasClass('index')){
       /* Pokud sekce není na této stránce, přesměruje na druhý HTML soubor
        s identifikátorem sekce v URL*/
-      window.location.href = "myself.html#" + idSekce;
+      window.location.href = 'myself.html#' + idSekce;
     }
     else{
       /* Pokud sekce není na této stránce, přesměruje na druhý HTML soubor
        s identifikátorem sekce v URL*/
-      window.location.href = "index.html#" + idSekce;
+      window.location.href = 'index.html#' + idSekce;
     }
 }
   // Scrolování na sekci O myšlenkových mapách
